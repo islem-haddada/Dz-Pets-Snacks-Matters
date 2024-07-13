@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './LoginPopup.css'
 import { assets } from '../../assets/assets'
-const LoginPopup = (setShowLogin) => {
+const LoginPopup = ({ setShowLogin }) => {
 
     const [currState, setCurrState] = useState("Login")
 
@@ -26,7 +26,6 @@ const LoginPopup = (setShowLogin) => {
                     ? <p>Create a new account? <span onClick={() => setCurrState("Sign Up")}>Click here</span></p>
                     : <p>Already have an account? <span onClick={() => setCurrState("Login")}>Login here</span></p>
                 }
-
 
             </form>
         </div>
