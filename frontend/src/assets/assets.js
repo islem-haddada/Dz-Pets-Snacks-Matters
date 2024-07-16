@@ -50,6 +50,7 @@ import video_3 from './video_3.mp4'
 import video_4 from './video_4.mp4'
 import video_5 from './video_5.mp4'
 
+
 import add_icon_white from './add_icon_white.png'
 import add_icon_green from './add_icon_green.png'
 import remove_icon_red from './remove_icon_red.png'
