@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import { Link } from 'react-router-dom'; // Importez Link depuis react-router-dom
 import { assets } from '../../assets/assets';
 
 const Footer = () => {
@@ -7,8 +8,13 @@ const Footer = () => {
     <div className='footer' id='footer'>
       <div className="footer-content">
         <div className="footer-content-left">
-            <img src={assets.logo} alt="" />
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <img src={assets.logo} alt="Tomato Logo" />
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it to make a type
+              specimen book.
+            </p>
             <div className="footer-social-icons">
                 <a href="https://www.facebook.com/yourfacebookpage" target="_blank" rel="noopener noreferrer">
                   <img src={assets.facebook_icon} alt="Facebook" />
@@ -24,7 +30,8 @@ const Footer = () => {
         <div className="footer-content-center">
             <h2>COMPANY</h2>
             <ul>
-                <li><a href="/">Home</a></li>
+            <li>
+                <a href="/">Home</a></li>
                 <li><a href="/about">About us</a></li>
                 <li><a href="/delivery">Delivery</a></li>
                 <li><a href="/privacy">Privacy policy</a></li>

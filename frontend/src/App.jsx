@@ -11,6 +11,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Verify from './pages/Verify/Verify';
 import AboutUs from './pages/AboutUs/AboutUs';
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 
 const App = () => {
 
@@ -29,6 +30,7 @@ const App = () => {
           <Route path='/myorders' element={<MyOrders />} />
           <Route path='/verify' element={<Verify />} />
           <Route path='/about' element={<AboutUs />} />
+          <Route path='/privacy' element={<PrivacyPolicy />} />
         </Routes>
       </div>
       <Footer />
