@@ -1,5 +1,5 @@
 import React from 'react';
-import './AboutUs.css'; // Assurez-vous d'avoir créé ce fichier CSS et d'y avoir ajouté les styles nécessaires
+import './AboutUs.css';
 import { assets } from '../../assets/assets';
 
 const AboutUs = () => {

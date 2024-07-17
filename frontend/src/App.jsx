@@ -10,9 +10,10 @@ import MyOrders from './pages/MyOrders/MyOrders';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Verify from './pages/Verify/Verify';
-import AboutUs from './pages/About_us/About_us';
+import AboutUs from './pages/AboutUs/AboutUs';
 
 const App = () => {
+
   const [showLogin, setShowLogin] = useState(false);
 
   return (
