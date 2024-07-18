@@ -3,8 +3,8 @@ import { assets } from '../../assets/assets'; // Assurez-vous que le chemin est 
 import './VideosGrid.css';
 
 const VideosGrid = () => {
-  const [width, setWidth] = useState(300);
-  const [height, setHeight] = useState(300);
+  const [width, setWidth] = useState(950);
+  const [height, setHeight] = useState(500);
 
   useEffect(() => {
     const liSlides = document.querySelectorAll('.li_slide');
