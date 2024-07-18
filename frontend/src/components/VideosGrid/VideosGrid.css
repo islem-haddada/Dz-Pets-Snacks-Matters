@@ -3,7 +3,8 @@
 }
 
 #pSlider {
-  width: 300px;
+  width: 100%;
+  max-width: 3000px;
   height: 300px;
   position: relative;
   margin: 0 auto;
@@ -24,7 +25,8 @@
   border-radius: 10px;
   background-color: khaki;
   flex: none;
-  margin-right: 150px;
+  margin-right: 20px;
+  overflow: hidden; /* Pour que la rotation ne dépasse pas le conteneur */
 }
 
 .li_slide:nth-child(even) {
@@ -124,10 +126,10 @@
     margin-left: 0;
   }
   95% {
-    margin-left: calc(100% + 150px);
+    margin-left: calc(100% + 20px);
   }
   98% {
-    margin-left: calc(100% + 150px);
+    margin-left: calc(100% + 20px);
   }
   99% {
     margin-left: 0;
@@ -154,10 +156,10 @@
     margin-left: 0;
   }
   95% {
-    margin-left: calc(-300% - 450px);
+    margin-left: calc(-300% - 60px);
   }
   98% {
-    margin-left: calc(-300% - 450px);
+    margin-left: calc(-300% - 60px);
   }
   99% {
     margin-left: 0;
@@ -185,8 +187,61 @@ h2 {
   text-align: center;
 }
 
+/* Taille des vidéos */
 .li_slide video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.5s;
+}
+
+/* Rotation dans les coins des vidéos */
+.li_slide video:hover {
+  transform: rotate(10deg);
+}
+
+/* Styles pour les écrans plus petits */
+@media (max-width: 600px) {
+  #pSlider {
+    width: 100%;
+    height: auto;
+  }
+
+  .li_slide {
+    margin-right: 10px;
+  }
+
+  #slider-container {
+    overflow-x: auto;
+  }
+
+  @keyframes tonext {
+    75% {
+      margin-left: 0;
+    }
+    95% {
+      margin-left: calc(100% + 10px);
+    }
+    98% {
+      margin-left: calc(100% + 10px);
+    }
+    99% {
+      margin-left: 0;
+    }
+  }
+
+  @keyframes tostart {
+    75% {
+      margin-left: 0;
+    }
+    95% {
+      margin-left: calc(-300% - 30px);
+    }
+    98% {
+      margin-left: calc(-300% - 30px);
+    }
+    99% {
+      margin-left: 0;
+    }
+  }
 }

@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { assets } from '../../assets/assets'; // Assurez-vous que le chemin est correct
 import './VideosGrid.css';
 
 const VideosGrid = () => {
   const [width, setWidth] = useState(950);
   const [height, setHeight] = useState(500);
+  const sliderRef = useRef(null);
 
   useEffect(() => {
     const liSlides = document.querySelectorAll('.li_slide');
@@ -14,10 +15,27 @@ const VideosGrid = () => {
     });
   }, [width, height]);
 
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      const slider = sliderRef.current;
+      const slideWidth = width + 20; // Largeur d'une diapositive + marge droite
+      if (event.key === 'ArrowRight') {
+        slider.scrollBy({ left: slideWidth, behavior: 'smooth' });
+      } else if (event.key === 'ArrowLeft') {
+        slider.scrollBy({ left: -slideWidth, behavior: 'smooth' });
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [width]);
+
   return (
     <div>
       <div id="pSlider" style={{ width: `${width}px`, height: `${height}px` }}>
-        <ol id="slider-container" dir="ltr">
+        <ol id="slider-container" ref={sliderRef} dir="ltr">
           <li id="slide_1" className="li_slide">
             <video src={assets.video_1} autoPlay loop muted></video>
             <div className="slide-snapper"></div>
