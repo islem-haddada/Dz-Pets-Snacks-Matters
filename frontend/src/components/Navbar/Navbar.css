@@ -18,6 +18,36 @@
     gap: 20px;
     color: #49557E;
     font-size: 18px;
+    position: relative;
+}
+
+.navbar-menu li {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Rotating Tree Animation */
+.navbar-menu li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top: 10px solid #FF4C24;
+    transition: width 0.3s ease, height 0.3s ease, border-width 0.3s ease;
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 0;
+}
+
+.navbar-menu li:hover::before {
+    width: 120%;
+    height: 120%;
+    border-width: 0 10px 10px 10px;
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(360deg);
 }
 
 .navbar-menu .active {
