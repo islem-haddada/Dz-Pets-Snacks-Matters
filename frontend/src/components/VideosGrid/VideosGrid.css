@@ -120,7 +120,6 @@
   background-color: transparent;
 }
 
-/* Animations */
 @keyframes tonext {
   75% {
     margin-left: 0;
@@ -172,7 +171,6 @@
   margin: 20px 0px;
 }
 
-/* Input */
 #sliderSettings {
   text-align: center;
 }
@@ -187,7 +185,7 @@ h2 {
   text-align: center;
 }
 
-/* Taille des vidéos */
+
 .li_slide video {
   width: 100%;
   height: 100%;
@@ -195,12 +193,12 @@ h2 {
   transition: transform 0.5s;
 }
 
-/* Rotation dans les coins des vidéos */
+
 .li_slide video:hover {
   transform: rotate(10deg);
 }
 
-/* Styles pour les écrans plus petits */
+
 @media (max-width: 600px) {
   #pSlider {
     width: 100%;
