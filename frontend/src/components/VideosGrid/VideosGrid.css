@@ -4,26 +4,26 @@
 
 #pSlider {
   width: 100%;
-  max-width: 3000px;
-  height: 300px;
+  max-width: 100%; 
+  height: 100%;
   position: relative;
   margin: 0 auto;
-  overflow: hidden; /* Assure que les éléments ne débordent pas */
+  overflow: hidden;
 }
 
 #slider-container {
   display: flex;
   height: 100%;
   width: 100%;
-  overflow-x: auto; /* Utilisez 'auto' pour permettre le défilement et masquer le débordement */
+  overflow-x: auto; 
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
 
 .li_slide {
   position: relative;
-  flex: 0 0 auto; /* Fix the width of the slide */
-  width: calc(100% - 20px); /* Ajuste la largeur pour tenir dans le conteneur */
+  flex: 0 0 auto; 
+  width: calc(100% - 20px); 
   max-width: 100%;
   border-radius: 10px;
   background-color: khaki;
@@ -205,12 +205,16 @@ h2 {
   }
 
   .li_slide {
-    width: calc(100% - 10px); /* Ajuste la largeur pour les écrans plus petits */
+    width: calc(100% - 10px);
     margin-right: 10px;
   }
 
   #slider-container {
     overflow-x: auto;
+  }
+
+  .li_slide video {
+    height: 100%; 
   }
 
   @keyframes tonext {
