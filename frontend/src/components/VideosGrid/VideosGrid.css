@@ -26,7 +26,7 @@
   background-color: khaki;
   flex: none;
   margin-right: 20px;
-  overflow: hidden; /* Pour que la rotation ne dépasse pas le conteneur */
+  overflow: hidden;
 }
 
 .li_slide:nth-child(even) {

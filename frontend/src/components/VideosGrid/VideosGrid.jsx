@@ -18,7 +18,7 @@ const VideosGrid = () => {
   useEffect(() => {
     const handleKeyDown = (event) => {
       const slider = sliderRef.current;
-      const slideWidth = width + 20; // Largeur d'une diapositive + marge droite
+      const slideWidth = width + 20; 
       if (event.key === 'ArrowRight') {
         slider.scrollBy({ left: slideWidth, behavior: 'smooth' });
       } else if (event.key === 'ArrowLeft') {
