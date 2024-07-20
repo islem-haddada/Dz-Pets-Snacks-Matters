@@ -4,26 +4,27 @@
 
 #pSlider {
   width: 100%;
-  max-width: 100%; 
+  max-width: 100%;
   height: 100%;
   position: relative;
   margin: 0 auto;
   overflow: hidden;
+  margin-top: 60px; /* Ajustez cette valeur selon vos besoins */
 }
 
 #slider-container {
   display: flex;
   height: 100%;
   width: 100%;
-  overflow-x: auto; 
+  overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
 
 .li_slide {
   position: relative;
-  flex: 0 0 auto; 
-  width: calc(100% - 20px); 
+  flex: 0 0 auto;
+  width: calc(100% - 20px);
   max-width: 100%;
   border-radius: 10px;
   background-color: khaki;
@@ -202,6 +203,7 @@ h2 {
   #pSlider {
     width: 100%;
     height: auto;
+    margin-top: 40px; /* Ajustez cette valeur selon vos besoins */
   }
 
   .li_slide {
@@ -214,7 +216,7 @@ h2 {
   }
 
   .li_slide video {
-    height: 100%; 
+    height: 100%;
   }
 
   @keyframes tonext {
