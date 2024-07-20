@@ -75,13 +75,9 @@ const Add = () => {
                         <p>Product Category</p>
                         <select name='category' onChange={onChangeHandler} value={data.category}>
                             <option value="freeze-dried turkey">freeze-dried turkey</option>
-                            <option value="Rolls">Rolls</option>
-                            <option value="Deserts">Deserts</option>
-                            <option value="Sandwich">Sandwich</option>
-                            <option value="Cake">Cake</option>
-                            <option value="Pure Veg">Pure Veg</option>
-                            <option value="Pasta">Pasta</option>
-                            <option value="Noodles">Noodles</option>
+                            <option value="dehydrated turkey">dehydrated turkey</option>
+                            <option value="freeze-dried chicken">freeze-dried chicken</option>
+                            <option value="dehydrated chicken">dehydrated chicken</option>
                         </select>
                     </div>
                     <div className='add-price flex-col'>

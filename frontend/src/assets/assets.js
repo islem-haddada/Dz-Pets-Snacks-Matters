@@ -99,15 +99,15 @@ export const assets = {
 
 export const menu_list = [
     {
-        menu_name: "Salad",
+        menu_name: "freeze-dried turkey",
         menu_image: menu_1
     },
     {
-        menu_name: "Rolls",
+        menu_name: "dehydrated turkey",
         menu_image: menu_2
     },
     {
-        menu_name: "Deserts",
+        menu_name: "freeze-dried chicken",
         menu_image: menu_3
     },
     {
