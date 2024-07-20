@@ -8,23 +8,25 @@
   height: 300px;
   position: relative;
   margin: 0 auto;
+  overflow: hidden; /* Assure que les éléments ne débordent pas */
 }
 
 #slider-container {
   display: flex;
   height: 100%;
   width: 100%;
-  overflow-x: scroll;
+  overflow-x: auto; /* Utilisez 'auto' pour permettre le défilement et masquer le débordement */
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
 
 .li_slide {
   position: relative;
-  width: 100%;
+  flex: 0 0 auto; /* Fix the width of the slide */
+  width: calc(100% - 20px); /* Ajuste la largeur pour tenir dans le conteneur */
+  max-width: 100%;
   border-radius: 10px;
   background-color: khaki;
-  flex: none;
   margin-right: 20px;
   overflow: hidden;
 }
@@ -185,7 +187,6 @@ h2 {
   text-align: center;
 }
 
-
 .li_slide video {
   width: 100%;
   height: 100%;
@@ -193,11 +194,9 @@ h2 {
   transition: transform 0.5s;
 }
 
-
 .li_slide video:hover {
   transform: rotate(10deg);
 }
-
 
 @media (max-width: 600px) {
   #pSlider {
@@ -206,6 +205,7 @@ h2 {
   }
 
   .li_slide {
+    width: calc(100% - 10px); /* Ajuste la largeur pour les écrans plus petits */
     margin-right: 10px;
   }
 
