@@ -6,10 +6,13 @@
 .explore-menu h1{
     color: #262626;
     font-weight: 500;
+    margin: auto;
 }
 .explore-menu-text{
     max-width: 60%;
-    color: #808080;
+    color: #403939;
+    margin: auto;
+    text-align: center;
 }
 .explore-menu-list{
     display: flex;

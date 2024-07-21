@@ -1,17 +1,17 @@
 .header {
-    background-color: #f8f9fa; /* Adjust background color as needed */
-    padding: 40px 20px;
+    background-color: #ffff; /* Adjust background color as needed */
+    padding: 0 0;
     text-align: center;
   }
   
   .header-contents {
-    max-width: 800px;
+    max-width: 6000px;
     margin: 0 auto;
   }
   
   .header-img {
-    max-width: 100%;
-    height: auto;
+    width: 950px;
+    height: 530px;
   }
   
   .header h2 {
