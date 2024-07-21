@@ -14,13 +14,12 @@ import AboutUs from './pages/AboutUs/AboutUs';
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 
 const App = () => {
-
   const [showLogin, setShowLogin] = useState(false);
 
   return (
     <>
       <ToastContainer />
-      {showLogin ? <LoginPopup setShowLogin={setShowLogin} /> : <></>}
+      {showLogin && <LoginPopup setShowLogin={setShowLogin} />}
       <div className='app'>
         <Navbar setShowLogin={setShowLogin} />
         <Routes>

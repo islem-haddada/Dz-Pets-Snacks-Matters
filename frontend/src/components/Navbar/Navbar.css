@@ -197,6 +197,19 @@
         display: none;
     }
 
+    .navbar-menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        text-align: center;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: transparent;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
     .navbar {
         padding: 10px 0;
     }
@@ -218,12 +231,57 @@
 /* Mobile Menu Toggle */
 .navbar-toggle {
     display: none;
-    font-size: 24px;
+    font-size: 2px;
     cursor: pointer;
+    margin: 5px;
+    background: transparent;
+    border: none;
+    color: #FF4C24; /* Couleur pour le contraste */
+    position: relative;
+    transition: color 0.3s, transform 0.3s;
+    /* Utiliser une icône de menu, comme des lignes horizontales */
 }
 
+.navbar-toggle::before {
+    content: "\2630"; /* Symbole de menu (hamburger icon) */
+    font-size: 24px;
+    display: block;
+    margin-left: 15px;
+}
+
+/* Style pour améliorer l'apparence et l'interaction */
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+    color: #d8631b; /* Changement de couleur au survol */
+    transform: scale(1.1); /* Effet de zoom au survol */
+    outline: none; /* Enlever le contour par défaut */
+}
+
+/* Mobile Menu Styles */
 @media (max-width: 750px) {
     .navbar-toggle {
         display: block;
     }
+
+    .navbar-menu {
+        display: none;
+        /* Styles pour le menu déroulant mobile */
+        flex-direction: column;
+        background: transparent; /* Couleur de fond pour le menu mobile */
+        position: absolute;
+        top: 60px;
+        line-height: 15px; /* Ajustez selon la hauteur de la barre de navigation */
+        left: 0;
+        width: 100%;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        z-index: 1000; /* Assurez-vous que le menu est au-dessus du reste du contenu */
+    }
+
+    .navbar-menu.active {
+        display: flex;
+        margin: 30px;
+        position: relative;
+        margin-top: -40px;
+    }
 }
+
