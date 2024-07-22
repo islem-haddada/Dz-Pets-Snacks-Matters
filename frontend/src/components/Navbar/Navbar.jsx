@@ -75,6 +75,18 @@ const Navbar = ({ setShowLogin }) => {
             Contact Us
           </a>
         </li>
+        <li>
+        <Link
+            to="/About"
+            onClick={() => {
+              setMenu("About");
+              if (isMenuOpen) toggleMenu();
+            }}
+            className={`${menu === "About" ? "active" : ""}`}
+          >
+            About Us
+          </Link>
+        </li>
       </ul>
       <div className="navbar-right">
         <Link to='/cart' className='navbar-search-icon'>
