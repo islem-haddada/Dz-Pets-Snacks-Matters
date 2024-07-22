@@ -38,10 +38,29 @@
   cursor: pointer;
   font-size: 1em;
   transition: background-color 0.3s ease;
+  animation: leBounceFromTop 2s infinite; /* Add animation */
 }
 
 .menu:hover {
   background-color: #e04321; /* Darker shade for hover effect */
+}
+
+@keyframes leBounceFromTop {
+  0%, 25%, 55%, 85%, 100% {
+    animation-timing-function: ease-out;
+    transform: translate3d(0, 0, 0);
+  }
+  41%, 44% {
+    animation-timing-function: ease-in;
+    transform: translate3d(0, -8px, 0) scale3d(1, 1.2, 1);
+  }
+  70% {
+    animation-timing-function: ease-in;
+    transform: translate3d(0, -2px, 0);
+  }
+  90% { 
+    transform: translate3d(0, -4px, 0); 
+  }
 }
 
 /* Responsive styles */

@@ -106,14 +106,14 @@
     background-color: #FF4C24;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 8px 17px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
   button:hover {
-    background-color: #e04321;
+    background-color: #FF4C24;
   }
   
   /* Responsive Styles */
