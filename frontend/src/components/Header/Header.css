@@ -2,17 +2,16 @@
   background-color: #fff; /* Adjust background color as needed */
   padding: 0;
   text-align: center;
-  margin-top: -2.2%;
+  margin-top: -4.8%;
 }
 
 .header-contents {
   max-width: 100%;
   margin: 0;
- 
 }
 
 .header-video {
-  width: 100%;
+  width: 104%;
   max-width: 980px;
   height: auto;
   border-radius: 20px; /* Adjust the value as needed */
@@ -20,13 +19,13 @@
 
 .header h2 {
   font-size: 2em;
-  margin: 10px 0;
+  margin: 8px 0;
   color: #333;
 }
 
 .header p {
   font-size: 1.2em;
-  margin-bottom: 1px;
+  margin-bottom: 5px;
   color: #666;
 }
 

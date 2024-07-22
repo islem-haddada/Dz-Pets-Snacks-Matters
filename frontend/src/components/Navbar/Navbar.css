@@ -5,11 +5,11 @@
     align-items: center;
     background-color: #fff;
     padding: 10px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
   }
   
   .logo {
-    height: 80px;
+    height: 120px;
   }
   
   /* Navbar Toggle for Mobile */
@@ -23,6 +23,7 @@
   .navbar-menu {
     list-style: none;
     display: flex;
+    margin-top: -5.1%;
     gap: 20px;
   }
   
