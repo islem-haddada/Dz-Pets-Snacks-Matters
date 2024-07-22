@@ -1,51 +1,63 @@
+/* Improved Header Styles */
+
 .header {
-  background-color: #ffff; /* Adjust background color as needed */
-  padding: 0;
+  background-color: #ffffff;
+  padding: 2px 0;
   text-align: center;
 }
 
 .header-contents {
-  max-width: 100%;
+  max-width: auto;
   margin: 0 0;
-  padding: 20px;
+  padding: 2 100px; /* Consistent padding */
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 10px; /* Reduced border-radius for a cleaner look */
 }
 
 .header-img {
   width: 100%;
-  max-width: 980px;
-  height: auto;
-  border-radius: 20px; /* Adjust the value as needed */
+  height: 50%;
+  border-radius: 20px; /* Maintain rounded corners */
+  margin-bottom: -180px; /* Space between image and text */
 }
 
 .header h2 {
   font-size: 2em;
-  margin: 15px 0;
-  color: #333;
+  margin: 1px 0;
+  color: #ef6f07;
 }
 
 .header p {
   font-size: 1.2em;
-  margin-bottom: 30px;
-  color: #666;
+  margin-bottom: 10px;
+  color: #666666;
 }
 
 .view-menu-btn {
-  background-color: #FF4C24; /* Primary button color */
-  color: white;
+  background-color: #FF4C24;
+  color: #ffffff;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 24px; /* Increased padding for better touch target */
   border-radius: 5px;
   cursor: pointer;
   font-size: 1em;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .view-menu-btn:hover {
-  background-color: #e04321; /* Darker shade for hover effect */
+  background-color: #e04321;
+  transform: scale(1.05); /* Slightly enlarge button on hover */
 }
 
-/* Responsive styles */
+.view-menu-btn:focus {
+  outline: 2px solid #ff8a65; /* Highlight button on focus for accessibility */
+}
+
 @media (max-width: 768px) {
+  .header-contents {
+    padding: 1px; /* Adjust padding for smaller screens */
+  }
+
   .header h2 {
     font-size: 1.5em;
   }
@@ -55,14 +67,14 @@
   }
 
   .view-menu-btn {
-    padding: 8px 16px;
+    padding: 10px 20px;
     font-size: 0.9em;
   }
 }
 
 @media (max-width: 480px) {
   .header-contents {
-    padding: 10px;
+    padding: 1px;
   }
 
   .header h2 {
@@ -74,7 +86,7 @@
   }
 
   .view-menu-btn {
-    padding: 6px 12px;
+    padding: 8px 16px;
     font-size: 0.8em;
   }
 }

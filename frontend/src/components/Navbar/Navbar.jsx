@@ -28,52 +28,52 @@ const Navbar = ({ setShowLogin }) => {
       </div>
       <ul className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
         <li>
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             onClick={() => {
               setMenu("home");
-              if (isMenuOpen) toggleMenu(); // Close menu if open
-            }} 
+              if (isMenuOpen) toggleMenu();
+            }}
             className={`${menu === "home" ? "active" : ""}`}
           >
             Home
           </Link>
         </li>
         <li>
-          <Link 
-            to="/menu" 
+          <a
+            href='#explore-menu'
             onClick={() => {
               setMenu("menu");
-              if (isMenuOpen) toggleMenu(); // Close menu if open
-            }} 
+              if (isMenuOpen) toggleMenu();
+            }}
             className={`${menu === "menu" ? "active" : ""}`}
           >
             Menu
-          </Link>
+          </a>
         </li>
         <li>
-          <Link 
-            to="/mobile-app" 
+          <a
+            href='#app-download'
             onClick={() => {
               setMenu("mob-app");
-               
-            }} 
+              if (isMenuOpen) toggleMenu();
+            }}
             className={`${menu === "mob-app" ? "active" : ""}`}
           >
             Mobile App
-          </Link>
+          </a>
         </li>
         <li>
-          <Link 
-            to="/contact" 
+          <a
+            href='#footer'
             onClick={() => {
               setMenu("contact");
-              if (isMenuOpen) toggleMenu(); 
-            }} 
+              if (isMenuOpen) toggleMenu();
+            }}
             className={`${menu === "contact" ? "active" : ""}`}
           >
             Contact Us
-          </Link>
+          </a>
         </li>
       </ul>
       <div className="navbar-right">
