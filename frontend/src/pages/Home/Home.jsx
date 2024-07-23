@@ -4,6 +4,7 @@ import ExploreMenu from '../../components/ExploreMenu/ExploreMenu'
 import FoodDisplay from '../../components/FoodDisplay/FoodDisplay'
 import AppDownload from '../../components/AppDownload/AppDownload'
 import VediosGrid from '../../components/VideosGrid/VideosGrid'
+import ImageGrid from '../../components/ImageGrid/ImageGrid'
 
 const Home = () => {
 
@@ -16,7 +17,7 @@ const Home = () => {
       <FoodDisplay category={category}/>
       <AppDownload/>
       <VediosGrid />
-      
+      <ImageGrid />
     </>
   )
 }
