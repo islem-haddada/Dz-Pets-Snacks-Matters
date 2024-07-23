@@ -92,7 +92,8 @@ export const assets = {
     video_3,
     video_4,
     video_5,
-    header_video
+    header_video,
+    food_4
 }
 
 export const menu_list = [
