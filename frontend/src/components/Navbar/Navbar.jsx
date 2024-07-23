@@ -65,7 +65,7 @@ const Navbar = ({ setShowLogin }) => {
         </li>
         <li>
           <a
-            href='#footer'
+            href='#app-download'
             onClick={() => {
               setMenu("contact");
               if (isMenuOpen) toggleMenu();
