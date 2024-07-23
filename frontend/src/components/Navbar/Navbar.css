@@ -126,6 +126,7 @@
     .navbar-menu {
       display: none;
       flex-direction: column;
+      text-align: right;
       gap: 0;
     }
   
