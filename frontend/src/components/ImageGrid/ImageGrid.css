@@ -31,7 +31,7 @@
 /* Item */
 .item {
   width: calc(var(--index) * 3);
-  height: calc(var(--index) * 12);
+  height: calc(var(--index) * 12%);
   background-color: #222;
   background-size: cover;
   background-position: center;
@@ -51,12 +51,6 @@
 
 .item::after {
   left: calc(var(--index) * -1);
-}
-
-.item video {
-  width: 100%;
-  height: 100%;
- object-fit: cover; 
 }
 
 /* Hover Effects */
