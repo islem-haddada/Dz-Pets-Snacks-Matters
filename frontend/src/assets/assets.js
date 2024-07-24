@@ -2,10 +2,13 @@ import basket_icon from './basket_icon.png'
 import logo from './logo.png'
 import header_img from './header_img.png'
 import search_icon from './search_icon.png'
+
 import menu_1 from './menu_1.png'
 import menu_2 from './menu_2.png'
 import menu_3 from './menu_3.png'
 import menu_4 from './menu_4.png'
+import menu_5 from './menu_5.png'
+import menu_6 from './menu_6.png'
 
 import food_1 from './food_1.png'
 import food_2 from './food_2.png'
@@ -103,20 +106,28 @@ export const assets = {
 
 export const menu_list = [
     {
-        menu_name: "freeze-dried turkey",
+        menu_name: "freeze-dried Turkey",
         menu_image: menu_1
     },
     {
-        menu_name: "dehydrated turkey",
+        menu_name: "dehydrated Turkey",
         menu_image: menu_2
     },
     {
-        menu_name: "freeze-dried chicken",
+        menu_name: "freeze-dried Chicken",
         menu_image: menu_3
     },
     {
-        menu_name: "dehydrated chicken",
+        menu_name: "dehydrated Chicken",
         menu_image: menu_4
+    },
+    {
+        menu_name: "freeze-dried Quail",
+        menu_image: menu_5
+    },
+    {
+        menu_name: "dehydrated Quail",
+        menu_image: menu_6
     }]
 
 export const food_list = [

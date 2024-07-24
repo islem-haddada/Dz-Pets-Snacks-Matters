@@ -78,6 +78,8 @@ const Add = () => {
                             <option value="dehydrated turkey">dehydrated turkey</option>
                             <option value="freeze-dried chicken">freeze-dried chicken</option>
                             <option value="dehydrated chicken">dehydrated chicken</option>
+                            <option value="freeze-dried Quail">freeze-dried Quail</option>
+                            <option value="dehydrated Quail">dehydrated Quail</option>
                         </select>
                     </div>
                     <div className='add-price flex-col'>
