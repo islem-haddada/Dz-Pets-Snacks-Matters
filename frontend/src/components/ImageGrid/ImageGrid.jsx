@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, forwardRef } from 'react';
 import './ImageGrid.css';
 import { assets } from '../../assets/assets';
 
-// Définir les images utilisées
+// Define the images used
 const images = [
   assets.header_img,
   assets.logo,
@@ -11,7 +11,7 @@ const images = [
   assets.chien_1,
 ];
 
-const ImageGrid = () => {
+const ImageGrid = forwardRef((props, ref) => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   useEffect(() => {
@@ -36,7 +36,7 @@ const ImageGrid = () => {
   };
 
   return (
-    <div className="wrapper">
+    <div className="wrapper" ref={ref}>
       <div className="items">
         {images.map((image, index) => (
           <div
@@ -45,12 +45,12 @@ const ImageGrid = () => {
             style={{ backgroundImage: `url(${image})` }}
             onClick={(event) => handleItemClick(index, event)}
           >
-            {/* Optionnel: Contenu additionnel */}
+            {/* Optional: Additional content */}
           </div>
         ))}
       </div>
     </div>
   );
-};
+});
 
 export default ImageGrid;

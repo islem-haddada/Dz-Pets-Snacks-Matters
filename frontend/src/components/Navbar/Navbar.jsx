@@ -82,7 +82,7 @@ const Navbar = ({ setShowLogin, imageGridRef }) => {
         </li>
         <li>
           <Link
-            to="/About"
+            to="/about"
             onClick={() => {
               setMenu("About");
               if (isMenuOpen) toggleMenu();
