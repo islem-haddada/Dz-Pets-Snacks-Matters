@@ -40,6 +40,9 @@ import food_30 from './food_30.png'
 import food_31 from './food_31.png'
 import food_32 from './food_32.png'
 
+import chien_1 from './chien_1.png'
+import dog1 from './dog1.png'
+
 import video_1 from './video_1.mp4'
 import video_2 from './video_2.mp4'
 import video_3 from './video_3.mp4'
@@ -93,7 +96,9 @@ export const assets = {
     video_4,
     video_5,
     header_video,
-    food_4
+    food_4,
+    chien_1,
+    dog1
 }
 
 export const menu_list = [

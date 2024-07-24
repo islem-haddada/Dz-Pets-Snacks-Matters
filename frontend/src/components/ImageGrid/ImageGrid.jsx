@@ -8,7 +8,7 @@ const images = [
   assets.logo,
   assets.dog1,
   assets.food_4,
-  assets.food_5,
+  assets.chien_1,
 ];
 
 const ImageGrid = () => {
