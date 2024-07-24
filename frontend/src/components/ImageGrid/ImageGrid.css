@@ -24,7 +24,7 @@
   display: flex;
   gap: 0.4rem;
   perspective: calc(var(--index) * 35);
-  margin-top: 100px;
+  margin-top: 125px;
 }
 
 /* Item */
