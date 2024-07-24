@@ -32,7 +32,7 @@ const ImageGrid = forwardRef((props, ref) => {
 
   const handleItemClick = (index, event) => {
     event.stopPropagation();
-    setActiveIndex(index);
+    setActiveIndex(prevIndex => prevIndex === index ? null : index);
   };
 
   return (
