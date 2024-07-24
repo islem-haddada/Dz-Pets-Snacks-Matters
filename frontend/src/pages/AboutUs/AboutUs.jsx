@@ -7,23 +7,46 @@ const AboutUs = () => {
     <div className="about-us">
       <div className="about-us-content">
         <div className="about-us-left">
-          <h2>About Us</h2>
+          <h2>About Dz Pets Snacks</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            non mattis risus. Integer pretium fermentum justo, vel feugiat
-            dolor mattis ac.
+            Dz Pets Snacks is dedicated to providing the best quality pet snacks made from natural ingredients. Our mission is to ensure your pets enjoy delicious and nutritious treats.
           </p>
           <p>
-            Nulla facilisi. Nulla in mi nec libero maximus euismod. Nam
-            consequat dui eget ligula aliquam interdum.
-          </p>
-          <p>
-            Fusce vitae velit sed ante ultrices efficitur. Quisque eu ligula
-            nec orci vestibulum semper ac ac odio.
+            Founded in 2020, Dz Pets Snacks has grown from a small startup to a leading provider of pet snacks in the industry. We pride ourselves on our commitment to quality and customer satisfaction.
           </p>
         </div>
         <div className="about-us-right">
           <img src={assets.header_img} alt="About Us Image" />
+        </div>
+      </div>
+
+      <div className="about-us-section">
+        <h2>Our Mission</h2>
+        <p>
+          Our mission is to offer high-quality, nutritious snacks that pets love. We believe in using only natural ingredients to create products that are both tasty and healthy for pets.
+        </p>
+        <div className="about-us-image">
+          <img src={assets.food_4} alt="Our Mission Image" />
+        </div>
+      </div>
+
+      <div className="about-us-section">
+        <h2>Our Team</h2>
+        <p>
+          We have a dedicated team of professionals who are passionate about pets and their wellbeing. Our team works tirelessly to innovate and improve our product offerings.
+        </p>
+        <div className="about-us-image">
+          <img src={assets.chien_1} alt="Our Team Image" />
+        </div>
+      </div>
+
+      <div className="about-us-section">
+        <h2>Our Products</h2>
+        <p>
+          We offer a wide range of pet snacks that cater to different dietary needs and preferences. Each product is carefully crafted to provide maximum nutrition and taste.
+        </p>
+        <div className="about-us-image">
+          <img src={assets.dog1} alt="Our Products Image" />
         </div>
       </div>
     </div>
