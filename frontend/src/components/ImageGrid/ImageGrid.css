@@ -1,7 +1,7 @@
 /* ImageGrid.css */
 * {
-  margin: 0;
-  padding: 0;
+  margin: 20px;
+  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: auto;
 }
 
 /* Items Container */
@@ -24,6 +24,7 @@
   display: flex;
   gap: 0.4rem;
   perspective: calc(var(--index) * 35);
+  margin-top: 100px;
 }
 
 /* Item */
@@ -34,7 +35,6 @@
   background-size: cover;
   background-position: center;
   cursor: pointer;
-  filter: grayscale(1) brightness(0.5);
   transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
   will-change: transform, filter, rotateY, width;
   position: relative;
@@ -53,9 +53,9 @@
 }
 
 .item video {
-  width: 110%;
-  height: 140%;
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
+ object-fit: cover; 
 }
 
 /* Hover Effects */
