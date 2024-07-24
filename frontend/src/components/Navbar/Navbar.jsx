@@ -4,7 +4,7 @@ import { assets } from '../../assets/assets';
 import { Link, useNavigate } from 'react-router-dom';
 import { StoreContext } from '../../Context/StoreContext';
 
-const Navbar = ({ setShowLogin }) => {
+const Navbar = ({ setShowLogin, imageGridRef }) => {
   const [menu, setMenu] = useState("home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { getTotalCartAmount, token, setToken } = useContext(StoreContext);
@@ -19,6 +19,14 @@ const Navbar = ({ setShowLogin }) => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   }
+
+  const handleContactUsClick = () => {
+    setMenu("contact");
+    if (isMenuOpen) toggleMenu();
+    if (imageGridRef.current) {
+      imageGridRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className='navbar'>
@@ -65,18 +73,15 @@ const Navbar = ({ setShowLogin }) => {
         </li>
         <li>
           <a
-            href='#app-download'
-            onClick={() => {
-              setMenu("contact");
-              if (isMenuOpen) toggleMenu();
-            }}
+            href='#ImageGrid'
+            onClick={handleContactUsClick}
             className={`${menu === "contact" ? "active" : ""}`}
           >
             Contact Us
           </a>
         </li>
         <li>
-        <Link
+          <Link
             to="/About"
             onClick={() => {
               setMenu("About");
