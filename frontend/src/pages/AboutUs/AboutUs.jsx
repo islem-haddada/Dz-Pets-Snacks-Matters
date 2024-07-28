@@ -26,17 +26,29 @@ const AboutUs = () => {
           <p>
             Founded in 2020, Dz Pets Snacks has grown from a small startup to a leading provider of pet snacks in the industry. We pride ourselves on our commitment to quality and customer satisfaction.
           </p>
-          <div className="about-us-video">
-            <video width="320" height="240" controls>
-              <source src={assets.video_1} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
         </div>
-        <div className="about-us-right about-us-scroll" ref={scrollRef}>
-          <img src={assets.header_img} alt="About Us Image" />
-          <img src={assets.header_img} alt="Additional Image 1" />
-          <img src={assets.header_img} alt="Additional Image 2" />
+
+        <div className="about-us-right">
+          <div className="about-us-video-container">
+            <div className="about-us-video">
+              <video width="320" height="240" controls>
+                <source src={assets.video_1} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div className="about-us-video-text">
+              <h3>Watch Our Introduction</h3>
+              <p>
+                Learn more about Dz Pets Snacks and how we ensure the quality of our pet treats through our introductory video. Our video covers everything from our ingredients to our mission and vision.
+              </p>
+            </div>
+          </div>
+
+          <div className="about-us-scroll" ref={scrollRef}>
+            <img src={assets.header_img} alt="About Us Image" />
+            <img src={assets.header_img} alt="Additional Image 1" />
+            <img src={assets.header_img} alt="Additional Image 2" />
+          </div>
         </div>
       </div>
 
