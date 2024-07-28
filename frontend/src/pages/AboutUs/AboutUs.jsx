@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './AboutUs.css';
 import { assets } from '../../assets/assets';
 
 const AboutUs = () => {
+  const scrollRef = useRef(null);
+
+  const handleKeyDown = (e) => {
+    if (scrollRef.current) {
+      if (e.key === 'ArrowLeft') {
+        scrollRef.current.scrollBy({ left: -300, behavior: 'smooth' });
+      } else if (e.key === 'ArrowRight') {
+        scrollRef.current.scrollBy({ left: 300, behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
-    <div className="about-us">
+    <div className="about-us" onKeyDown={handleKeyDown} tabIndex="0">
       <div className="about-us-content">
         <div className="about-us-left">
           <h2>About Dz Pets Snacks Matters</h2>
@@ -21,7 +33,7 @@ const AboutUs = () => {
             </video>
           </div>
         </div>
-        <div className="about-us-right">
+        <div className="about-us-right about-us-scroll" ref={scrollRef}>
           <img src={assets.header_img} alt="About Us Image" />
           <img src={assets.header_img} alt="Additional Image 1" />
           <img src={assets.header_img} alt="Additional Image 2" />

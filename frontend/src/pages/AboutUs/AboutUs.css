@@ -4,6 +4,9 @@
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
   color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  outline: none; /* To remove focus outline */
 }
 
 .about-us-content {
@@ -36,12 +39,19 @@
   min-width: 300px;
 }
 
-.about-us-right img {
-  width: 100%;
+.about-us-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.about-us-scroll img {
+  width: 300px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
 }
 
 .about-us-video {
@@ -83,4 +93,27 @@
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-us-left, .about-us-right {
+    flex: 1 1 100%;
+  }
+
+  .about-us-left h2 {
+    font-size: 1.8em;
+  }
+
+  .about-us-left p, .about-us-section p {
+    font-size: 1em;
+  }
+
+  .about-us-section h2 {
+    font-size: 1.6em;
+  }
+
+  .about-us-scroll img {
+    width: 100%;
+  }
 }
