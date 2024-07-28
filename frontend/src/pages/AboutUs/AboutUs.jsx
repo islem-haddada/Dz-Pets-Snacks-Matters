@@ -7,7 +7,7 @@ const AboutUs = () => {
     <div className="about-us">
       <div className="about-us-content">
         <div className="about-us-left">
-          <h2>About Dz Pets Snacks</h2>
+          <h2>About Dz Pets Snacks Matters</h2>
           <p>
             Dz Pets Snacks is dedicated to providing the best quality pet snacks made from natural ingredients. Our mission is to ensure your pets enjoy delicious and nutritious treats.
           </p>
