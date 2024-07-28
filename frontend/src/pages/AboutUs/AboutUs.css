@@ -4,8 +4,8 @@
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
   color: #333;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1350px;
+  margin: auto auto;
   outline: none; /* To remove focus outline */
 }
 
@@ -30,7 +30,7 @@
 
 .about-us-left p {
   font-size: 1.2em;
-  margin-bottom: 15px;
+  margin-bottom: 1px;
   line-height: 1.8;
 }
 
@@ -66,15 +66,11 @@
 
 .about-us-scroll img {
   flex: 0 100 300px; /* Fix image size */
-  height: 200px; /* Set a fixed height for consistency */
+  height: 330px; /* Set a fixed height for consistency */
   object-fit: cover; /* Ensure the image covers the area without distortion */
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for better depth */
   transition: transform 0.3s ease-in-out; /* Smooth zoom effect on hover */
-}
-
-.about-us-scroll img:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 /* Enhance the video section styling */
