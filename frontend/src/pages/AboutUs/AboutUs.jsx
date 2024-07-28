@@ -23,8 +23,8 @@ const AboutUs = () => {
         </div>
         <div className="about-us-right">
           <img src={assets.header_img} alt="About Us Image" />
-          <img src={assets.additional_img1} alt="Additional Image 1" />
-          <img src={assets.additional_img2} alt="Additional Image 2" />
+          <img src={assets.header_img} alt="Additional Image 1" />
+          <img src={assets.header_img} alt="Additional Image 2" />
         </div>
       </div>
 
