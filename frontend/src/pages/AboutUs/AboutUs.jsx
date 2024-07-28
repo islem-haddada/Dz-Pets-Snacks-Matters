@@ -14,17 +14,15 @@ const AboutUs = () => {
           <p>
             Founded in 2020, Dz Pets Snacks has grown from a small startup to a leading provider of pet snacks in the industry. We pride ourselves on our commitment to quality and customer satisfaction.
           </p>
-          {/* Ajout de la vidéo */}
           <div className="about-us-video">
             <video width="320" height="240" controls>
-              <source src="path/to/your/video.mp4" type="video/mp4" />
+              <source src={assets.video_1} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
         </div>
         <div className="about-us-right">
           <img src={assets.header_img} alt="About Us Image" />
-          {/* Ajout de photos supplémentaires */}
           <img src={assets.additional_img1} alt="Additional Image 1" />
           <img src={assets.additional_img2} alt="Additional Image 2" />
         </div>
