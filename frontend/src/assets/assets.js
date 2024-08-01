@@ -2,7 +2,6 @@ import basket_icon from './basket_icon.png'
 import logo from './logo.png'
 import header_img from './header_img.png'
 import search_icon from './search_icon.png'
-
 import menu_1 from './menu_1.png'
 import menu_2 from './menu_2.png'
 import menu_3 from './menu_3.png'
@@ -43,16 +42,6 @@ import food_30 from './food_30.png'
 import food_31 from './food_31.png'
 import food_32 from './food_32.png'
 
-import chien_1 from './chien_1.png'
-import dog1 from './dog1.png'
-
-import video_1 from './video_1.mp4'
-import video_2 from './video_2.mp4'
-import video_3 from './video_3.mp4'
-import video_4 from './video_4.mp4'
-import video_5 from './video_5.mp4'
-import header_video from './header_video.mp4'
-
 import add_icon_white from './add_icon_white.png'
 import add_icon_green from './add_icon_green.png'
 import remove_icon_red from './remove_icon_red.png'
@@ -92,41 +81,32 @@ export const assets = {
     bag_icon,
     parcel_icon,
     checked,
-    un_checked,
-    video_1,
-    video_2,
-    video_3,
-    video_4,
-    video_5,
-    header_video,
-    food_4,
-    chien_1,
-    dog1
+    un_checked
 }
 
 export const menu_list = [
     {
-        menu_name: "freeze-dried Turkey",
+        menu_name: "Freeze-dried Turkey",
         menu_image: menu_1
     },
     {
-        menu_name: "dehydrated Turkey",
+        menu_name: "Dehydrated Turkey",
         menu_image: menu_2
     },
     {
-        menu_name: "freeze-dried Chicken",
+        menu_name: "Freeze-dried Chicken",
         menu_image: menu_3
     },
     {
-        menu_name: "dehydrated Chicken",
+        menu_name: "Dehydrated Chicken",
         menu_image: menu_4
     },
     {
-        menu_name: "freeze-dried Quail",
+        menu_name: "Freeze-dried Qauil",
         menu_image: menu_5
     },
     {
-        menu_name: "dehydrated Quail",
+        menu_name: "Dehydrated Qauil",
         menu_image: menu_6
     }]
 
@@ -313,7 +293,7 @@ export const food_list = [
     },
     {
         _id: "26",
-        name: "#FF4C24 Pasta",
+        name: "Tomato Pasta",
         image: food_26,
         price: 18,
         description: "Food provides essential nutrients for overall health and well-being",
