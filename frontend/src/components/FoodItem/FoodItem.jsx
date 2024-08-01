@@ -13,7 +13,7 @@ const FoodItem = ({ image, name, price, desc, id }) => {
         const y = (e.clientY - rect.top) / rect.height;
 
         imageRef.current.style.transformOrigin = `${x * 100}% ${y * 100}%`;
-        imageRef.current.style.transform = 'scale(4.3)'; // Augmentez la valeur du scale
+        imageRef.current.style.transform = 'scale(4.8)'; // Augmentez la valeur du scale
     };
 
     const handleMouseLeave = () => {

@@ -1,10 +1,10 @@
 .food-item {
-    width: 100%;
+    width: 109%;
     margin: auto;
     border-radius: 15px;
     box-shadow: 0px 0px 10px #00000015;
     transition: transform 0.3s; /* Ajout de la transition pour le zoom */
-    animation: fadeIn 1s;
+    animation: fadeIn 1.1s;
 }
 
 .food-item:hover {
