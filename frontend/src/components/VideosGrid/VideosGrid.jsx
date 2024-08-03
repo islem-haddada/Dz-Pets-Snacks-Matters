@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { assets } from '../../assets/assets'; // Assurez-vous que le chemin est correct
+import { assets } from '../../assets/assets'; // Ensure the path is correct
 import './VideosGrid.css';
 
 const VideosGrid = () => {
@@ -18,7 +18,7 @@ const VideosGrid = () => {
   useEffect(() => {
     const handleKeyDown = (event) => {
       const slider = sliderRef.current;
-      const slideWidth = width + 20; 
+      const slideWidth = width + 20;
       if (event.key === 'ArrowRight') {
         slider.scrollBy({ left: slideWidth, behavior: 'smooth' });
       } else if (event.key === 'ArrowLeft') {
@@ -39,7 +39,7 @@ const VideosGrid = () => {
           <li id="slide_1" className="li_slide">
             <video src={assets.video_1} autoPlay loop muted></video>
             <div className="slide-snapper"></div>
-            <a className="prev_slide" href="#slide_4"></a>
+            <a className="prev_slide" href="#slide_6"></a>
             <a className="next_slide" href="#slide_2"></a>
           </li>
           <li id="slide_2" className="li_slide">
@@ -58,6 +58,18 @@ const VideosGrid = () => {
             <video src={assets.video_4} autoPlay loop muted></video>
             <div className="slide-snapper"></div>
             <a className="prev_slide" href="#slide_3"></a>
+            <a className="next_slide" href="#slide_5"></a>
+          </li>
+          <li id="slide_5" className="li_slide">
+            <video src={assets.video_5} autoPlay loop muted></video>
+            <div className="slide-snapper"></div>
+            <a className="prev_slide" href="#slide_4"></a>
+            <a className="next_slide" href="#slide_6"></a>
+          </li>
+          <li id="slide_6" className="li_slide">
+            <video src={assets.video_6} autoPlay loop muted></video>
+            <div className="slide-snapper"></div>
+            <a className="prev_slide" href="#slide_5"></a>
             <a className="next_slide" href="#slide_1"></a>
           </li>
         </ol>

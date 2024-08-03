@@ -43,6 +43,13 @@ import food_30 from './food_30.png'
 import food_31 from './food_31.png'
 import food_32 from './food_32.png'
 
+import video_1 from './video_1.mp4'
+import video_2 from './video_2.mp4'
+import video_3 from './video_3.mp4'
+import video_4 from './video_4.mp4'
+import video_5 from './video_5.mp4'
+import video_6 from './video_6.mp4'
+
 import add_icon_white from './add_icon_white.png'
 import add_icon_green from './add_icon_green.png'
 import remove_icon_red from './remove_icon_red.png'
@@ -83,7 +90,13 @@ export const assets = {
     bag_icon,
     parcel_icon,
     checked,
-    un_checked
+    un_checked,
+    video_1,
+    video_2,
+    video_3,
+    video_4,
+    video_5,
+    video_6
 }
 
 export const menu_list = [
