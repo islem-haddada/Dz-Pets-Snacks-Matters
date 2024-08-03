@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import { Link } from 'react-router-dom'; // Importez Link depuis react-router-dom
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import { assets } from '../../assets/assets';
 
 const Footer = () => {
@@ -8,47 +8,44 @@ const Footer = () => {
     <div className='footer' id='footer'>
       <div className="footer-content">
         <div className="footer-content-left">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it to make a type
-              specimen book.
-            </p>
-            <div className="footer-social-icons">
-                <a href="https://www.facebook.com/yourfacebookpage" target="_blank" rel="noopener noreferrer">
-                  <img src={assets.facebook_icon} alt="Facebook" />
-                </a>
-                <a href="https://twitter.com/yourtwitterhandle" target="_blank" rel="noopener noreferrer">
-                  <img src={assets.twitter_icon} alt="Twitter" />
-                </a>
-                <a href="https://www.linkedin.com/company/yourlinkedinpage" target="_blank" rel="noopener noreferrer">
-                  <img src={assets.linkedin_icon} alt="LinkedIn" />
-                </a>
-            </div>
+          <p>
+            Welcome to DzPetsSnacksMatters, where your pets' health and happiness are our top priority.
+            We offer a variety of healthy snacks tailored for your pets' needs. Join us on our mission to 
+            bring joy to your pets' lives, one snack at a time.
+          </p>
+          <div className="footer-social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61563412271128" target="_blank" rel="noopener noreferrer">
+              <img src={assets.facebook_icon} alt="Facebook" />
+            </a>
+            <a href="https://twitter.com/yourtwitterhandle" target="_blank" rel="noopener noreferrer">
+              <img src={assets.twitter_icon} alt="Twitter" />
+            </a>
+            <a href="https://www.linkedin.com/company/yourlinkedinpage" target="_blank" rel="noopener noreferrer">
+              <img src={assets.linkedin_icon} alt="LinkedIn" />
+            </a>
+          </div>
         </div>
         <div className="footer-content-center">
-            <h2>COMPANY</h2>
-            <ul>
-            <li>
-                <a href="/">Home</a></li>
-                <li><a href="/about">About us</a></li>
-                <li><a href="/myorders">Delivery</a></li>
-                <li><a href="/privacy">Privacy policy</a></li>
-            </ul>
+          <h2>COMPANY</h2>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About us</Link></li>
+            <li><Link to="/myorders">Delivery</Link></li>
+            <li><Link to="/privacy">Privacy policy</Link></li>
+          </ul>
         </div>
         <div className="footer-content-right">
-            <h2>GET IN TOUCH</h2>
-            <ul>
-                <li>+1-212-456-7890</li>
-                <li>contact@DzPets.com</li>
-            </ul>
+          <h2>GET IN TOUCH</h2>
+          <ul>
+            <li>+213-697-729-408</li>
+            <li>dz.pets.snacks.matters@gmail.com</li>
+          </ul>
         </div>
       </div>
       <hr />
-      <p className="footer-copyright">Copyright 2024 © Dz Pets.com - All Right Reserved.</p>
+      <p className="footer-copyright">Copyright 2024 © DzPetsSnacksMatters.com - All Rights Reserved.</p>
     </div>
   );
 };
 
 export default Footer;
-
