@@ -2,6 +2,7 @@ import basket_icon from './basket_icon.png'
 import logo from './logo.png'
 import header_img from './header_img.png'
 import header_video from './header_video.mp4'
+import video_about from './video_about.mp4'
 import search_icon from './search_icon.png'
 import menu_1 from './menu_1.png'
 import menu_2 from './menu_2.png'
@@ -82,6 +83,7 @@ export const assets = {
     basket_icon,
     header_img,
     header_video,
+    video_about,
     search_icon,
     rating_starts,
     add_icon_green,

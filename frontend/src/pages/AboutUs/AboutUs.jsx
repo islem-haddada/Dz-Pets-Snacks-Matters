@@ -31,7 +31,7 @@ const AboutUs = () => {
             Founded in 2020, Dz Pets Snacks Matters has grown from a small startup to a leading provider of pet snacks in the industry. We pride ourselves on our commitment to quality and customer satisfaction.
           </p>
           <div className="about-us-video">
-            <video src={assets.video_1} autoPlay loop muted></video>
+            <video src={assets.video_about} autoPlay loop muted></video>
           </div>
         </div>
 
