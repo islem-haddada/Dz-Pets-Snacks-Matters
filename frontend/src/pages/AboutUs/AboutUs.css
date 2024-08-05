@@ -1,9 +1,10 @@
 .about-us {
-  padding: 40px 20px;
+  padding: 20px 10px;
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
   color: #333;
   max-width: 1350px;
+  text-align: center;
   margin: auto;
   outline: none; /* To remove focus outline */
 }
@@ -18,24 +19,27 @@
 
 .about-us-left {
   flex: 1;
-  min-width: 300px;
+  min-width: 550px;
+  margin-left: auto;
 }
 
 .about-us-left h2 {
   font-size: 2.2em;
   margin-bottom: 20px;
+  margin-left: 250px;
   color: #2c3e50;
 }
 
 .about-us-left p {
   font-size: 1.2em;
   margin-bottom: 1px;
+  width: 150%;
   line-height: 1.8;
 }
 
 .about-us-right {
   flex: 1;
-  min-width: 300px;
+  min-width: 500px;
 }
 
 /* Enhance the scrollable image container */
@@ -64,8 +68,8 @@
 }
 
 .about-us-scroll img {
-  flex: 0 0 300px; /* Fix image size */
-  height: 330px; /* Set a fixed height for consistency */
+  flex: 0 0 0; /* Fix image size */
+  height: 480px; /* Set a fixed height for consistency */
   object-fit: cover; /* Ensure the image covers the area without distortion */
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for better depth */
@@ -74,19 +78,20 @@
 
 /* Enhance the video section styling */
 .about-us-video {
-  margin: 20px 0;
-  text-align: center;
+  margin: 0 0;
+  text-align: right;
 }
 
 .about-us-video video {
   width: 100%;
-  max-width: 100%; /* Ensure it fits within its container */
+  max-width: 57%; /* Adjusted for better fit */
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
   border: 2px solid #2c3e50; /* Optional border for emphasis */
 }
 
+/* About Us section styling */
 .about-us-section {
   margin-bottom: 60px;
 }
@@ -109,7 +114,7 @@
 }
 
 .about-us-image img {
-  width: 80%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -135,5 +140,9 @@
 
   .about-us-scroll img {
     width: 100%;
+  }
+
+  .about-us-video video {
+    max-width: 100%; /* Ensure it fits within its container */
   }
 }

@@ -30,10 +30,6 @@ const AboutUs = () => {
           <p>
             Founded in 2020, Dz Pets Snacks Matters has grown from a small startup to a leading provider of pet snacks in the industry. We pride ourselves on our commitment to quality and customer satisfaction.
           </p>
-          <div className="about-us-video">
-            <video src={assets.video_about} autoPlay loop muted></video>
-          </div>
-        </div>
 
         <div className="about-us-right about-us-scroll" ref={scrollRef}>
           <img src={assets.header_img} alt="About Us Image" />
@@ -41,6 +37,11 @@ const AboutUs = () => {
           <img src={assets.header_img} alt="Additional Image 2" />
         </div>
       </div>
+
+      <div className="about-us-video">
+            <video src={assets.video_about} autoPlay loop muted></video>
+          </div>
+        </div>
 
       <div className="about-us-section">
         <h2>Our Mission</h2>
