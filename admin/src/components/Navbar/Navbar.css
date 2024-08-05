@@ -1,12 +1,24 @@
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 8px 4%;
+    background-color: #fff; /* Optional: background color for better visibility */
 }
-.navbar .logo{
-    width: max(10%,80px);
+
+.navbar .logo {
+    width: max(10%, 80px);
 }
-.navbar .profile{
-    width: 40px;
+
+.navbar .welcome-message {
+    flex-grow: 1;
+    text-align: center; /* Centers the text */
+}
+
+.navbar .profile {
+    width: 120px;
+}
+
+.navbar .welcome-message h1 {
+    margin: 0;
 }
