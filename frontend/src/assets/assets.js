@@ -4,6 +4,11 @@ import header_img from './header_img.png'
 import header_video from './header_video.mp4'
 import video_about from './video_about.mp4'
 import search_icon from './search_icon.png'
+
+import machine from './machine.png'
+import machine_1 from './machine_1.png'
+import machine_2 from './machine_2.png'
+
 import menu_1 from './menu_1.png'
 import menu_2 from './menu_2.png'
 import menu_3 from './menu_3.png'
@@ -102,6 +107,9 @@ export const assets = {
     parcel_icon,
     checked,
     un_checked,
+    machine,
+    machine_1,
+    machine_2,
     video_1,
     video_2,
     video_3,
