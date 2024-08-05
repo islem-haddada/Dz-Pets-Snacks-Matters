@@ -68,7 +68,7 @@
 }
 
 .about-us-scroll img {
-  flex: 0 0 0; /* Fix image size */
+  flex: auto auto auto; /* Fix image size */
   height: 480px; /* Set a fixed height for consistency */
   object-fit: cover; /* Ensure the image covers the area without distortion */
   border-radius: 8px;
@@ -115,7 +115,7 @@
 
 .about-us-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -139,7 +139,7 @@
   }
 
   .about-us-scroll img {
-    width: 100%;
+    width: 150%;
   }
 
   .about-us-video video {
