@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 8px 4%;
-    background-color: #fff; /* Optional: background color for better visibility */
+    background-color: #fff;
 }
 
 .navbar .logo {
@@ -12,7 +12,7 @@
 
 .navbar .welcome-message {
     flex-grow: 1;
-    text-align: center; /* Centers the text */
+    text-align: center; 
 }
 
 .navbar .profile {
