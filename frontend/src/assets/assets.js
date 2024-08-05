@@ -50,6 +50,15 @@ import video_4 from './video_4.mp4'
 import video_5 from './video_5.mp4'
 import video_6 from './video_6.mp4'
 
+import image_1 from './image_1.png'
+import image_2 from './image_2.png'
+import image_3 from './image_3.png'
+import image_4 from './image_4.png'
+import image_5 from './image_5.png'
+import image_6 from './image_6.png'
+import image_7 from './image_7.png'
+import image_8 from './image_8.png'
+
 import add_icon_white from './add_icon_white.png'
 import add_icon_green from './add_icon_green.png'
 import remove_icon_red from './remove_icon_red.png'
@@ -96,7 +105,15 @@ export const assets = {
     video_3,
     video_4,
     video_5,
-    video_6
+    video_6,
+    image_1,
+    image_2,
+    image_3,
+    image_4,
+    image_5,
+    image_6,
+    image_7,
+    image_8
 }
 
 export const menu_list = [

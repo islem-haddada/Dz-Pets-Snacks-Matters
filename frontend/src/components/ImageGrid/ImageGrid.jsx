@@ -4,11 +4,14 @@ import { assets } from '../../assets/assets';
 
 // Define the images used
 const images = [
-  assets.header_img,
-  assets.logo,
-  assets.dog1,
-  assets.food_4,
-  assets.chien_1,
+  assets.image_1,
+  assets.image_2,
+  assets.image_3,
+  assets.image_4,
+  assets.image_5,
+  assets.image_6,
+  assets.image_7,
+  assets.image_8,
 ];
 
 const ImageGrid = forwardRef((props, ref) => {
@@ -19,14 +22,27 @@ const ImageGrid = forwardRef((props, ref) => {
       setActiveIndex(null);
     };
 
+    const handleKeyDown = (event) => {
+      if (activeIndex !== null) {
+        if (event.key === 'ArrowRight') {
+          setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
+        } else if (event.key === 'ArrowLeft') {
+          setActiveIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+        }
+      }
+    };
+
     if (activeIndex !== null) {
       document.addEventListener('click', handleClickOutside);
+      document.addEventListener('keydown', handleKeyDown);
     } else {
       document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener('keydown', handleKeyDown);
     }
 
     return () => {
       document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener('keydown', handleKeyDown);
     };
   }, [activeIndex]);
 
