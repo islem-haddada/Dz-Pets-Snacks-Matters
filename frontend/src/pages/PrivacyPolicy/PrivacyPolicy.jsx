@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
         <h2>Privacy Policy</h2>
         
         <p>
-          At [Your Company Name], we are committed to protecting your privacy. This privacy policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.
+          At Dz Pets Snacks Matters, we are committed to protecting your privacy. This privacy policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.
         </p>
         
         <h3>Information Collection</h3>
@@ -60,11 +60,11 @@ const PrivacyPolicy = () => {
           If you have any questions about this privacy policy, you can contact us using the information below:
         </p>
         <p>
-          [Your Company Name]<br />
+          [Dz Pets Snacks Matters]<br />
           [Address]<br />
           [City, State, Zip Code]<br />
-          [Email]<br />
-          [Phone Number]
+          [dz.pets.snacks.matters@gmail.com]<br />
+          [+213-697-729-408]
         </p>
       </div>
     </div>

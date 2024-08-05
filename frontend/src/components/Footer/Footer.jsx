@@ -1,6 +1,7 @@
+// Footer.js
 import React from 'react';
 import './Footer.css';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link } from 'react-router-dom';
 import { assets } from '../../assets/assets';
 
 const Footer = () => {
