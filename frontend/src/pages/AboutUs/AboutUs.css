@@ -1,11 +1,10 @@
-/* AboutUs.css */
 .about-us {
   padding: 40px 20px;
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
   color: #333;
   max-width: 1350px;
-  margin: auto auto;
+  margin: auto;
   outline: none; /* To remove focus outline */
 }
 
@@ -65,7 +64,7 @@
 }
 
 .about-us-scroll img {
-  flex: 0 100 300px; /* Fix image size */
+  flex: 0 0 300px; /* Fix image size */
   height: 330px; /* Set a fixed height for consistency */
   object-fit: cover; /* Ensure the image covers the area without distortion */
   border-radius: 8px;
@@ -87,7 +86,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
   border: 2px solid #2c3e50; /* Optional border for emphasis */
 }
-
 
 .about-us-section {
   margin-bottom: 60px;
