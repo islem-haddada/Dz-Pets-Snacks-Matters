@@ -1,9 +1,13 @@
 import React from 'react';
 import './Footer.css';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import { assets } from '../../assets/assets';
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className='footer' id='footer'>
       <div className="footer-content">
@@ -26,16 +30,16 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-content-center">
-          <h2>COMPANY</h2>
+          <h2>Company</h2>
           <ul>
-            <li><a to="/">Home</a></li>
-            <li><a to="/about">About Us</a></li>
-            <li><a to="/myorders">My Orders</a></li>
-            <li><a to="/privacy">Privacy Policy</a></li>
+            <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
+            <li><Link to="/about" onClick={scrollToTop}>About Us</Link></li>
+            <li><Link to="/myorders" onClick={scrollToTop}>My Orders</Link></li>
+            <li><Link to="/privacy" onClick={scrollToTop}>Privacy Policy</Link></li>
           </ul>
         </div>
         <div className="footer-content-right">
-          <h2>GET IN TOUCH</h2>
+          <h2>Get in Touch</h2>
           <ul>
             <li>+213-697-729-408</li>
             <li><a href="mailto:dz.pets.snacks.matters@gmail.com">dz.pets.snacks.matters@gmail.com</a></li>
