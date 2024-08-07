@@ -72,6 +72,12 @@ const VideosGrid = () => {
             <a className="prev_slide" href="#slide_5"></a>
             <a className="next_slide" href="#slide_1"></a>
           </li>
+          <li id="slide_7" className="li_slide">
+            <video src={assets.video_7} autoPlay loop muted></video>
+            <div className="slide-snapper"></div>
+            <a className="prev_slide" href="#slide_5"></a>
+            <a className="next_slide" href="#slide_1"></a>
+          </li>
         </ol>
       </div>
     </div>
