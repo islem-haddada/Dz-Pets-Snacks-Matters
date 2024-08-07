@@ -74,6 +74,7 @@ import video_3 from './video_3.mp4'
 import video_4 from './video_4.mp4'
 import video_5 from './video_5.mp4'
 import video_6 from './video_6.mp4'
+import video_7 from './video_7.mp4'
 
 import add_icon_white from './add_icon_white.png'
 import add_icon_green from './add_icon_green.png'
@@ -125,6 +126,7 @@ export const assets = {
     video_4,
     video_5,
     video_6,
+    video_7,
     image_1,
     image_2,
     image_3,
