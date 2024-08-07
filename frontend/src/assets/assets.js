@@ -59,37 +59,12 @@ import F_2image from './F_2image.png'
 import F_3image from './F_3image.png'
 import F_4image from './F_4image.png'
 
-import food_8 from './food_8.png'
-import food_9 from './food_9.png'
-import food_10 from './food_10.png'
-import food_11 from './food_11.png'
-import food_12 from './food_12.png'
-import food_13 from './food_13.png'
-import food_14 from './food_14.png'
-import food_15 from './food_15.png'
-import food_16 from './food_16.png'
-import food_17 from './food_17.png'
-import food_18 from './food_18.png'
-import food_19 from './food_19.png'
-import food_20 from './food_20.png'
-import food_21 from './food_21.png'
-
-
 import video_1 from './video_1.mp4'
 import video_2 from './video_2.mp4'
 import video_3 from './video_3.mp4'
 import video_4 from './video_4.mp4'
 import video_5 from './video_5.mp4'
 import video_6 from './video_6.mp4'
-
-import image_1 from './image_1.png'
-import image_2 from './image_2.png'
-import image_3 from './image_3.png'
-import image_4 from './image_4.png'
-import image_5 from './image_5.png'
-import image_6 from './image_6.png'
-import image_7 from './image_7.png'
-import image_8 from './image_8.png'
 
 import add_icon_white from './add_icon_white.png'
 import add_icon_green from './add_icon_green.png'
@@ -141,14 +116,44 @@ export const assets = {
     video_4,
     video_5,
     video_6,
-    image_1,
-    image_2,
-    image_3,
-    image_4,
-    image_5,
-    image_6,
-    image_7,
-    image_8
+    D_image1,
+    D_image2,
+    D_image3,
+    D_image4,
+    D_image5,
+    D_image6,
+    D_image7,
+    D_image8,
+    F_image1,
+    F_image2,
+    F_image3,
+    F_image4,
+    F_image5,
+    F_image6,
+    F_image7,
+    D1_image,
+    D2_image,
+    D3_image,
+    D4_image,
+    D5_image,
+    D6_image,
+    D7_image,
+    D8_image,
+    F1_image,
+    F2_image,
+    F3_image,
+    F4_image,
+    F5_image,
+    F6_image,
+    F7_image,
+    D_1image,
+    D_2image,
+    D_3image,
+    D_4image,
+    F_1image,
+    F_2image,
+    F_3image,
+    F_4image
 }
 
 export const menu_list = [
@@ -181,7 +186,7 @@ export const food_list = [
     {
         _id: "1",
         name: "Greek salad",
-        image: food_1,
+        image: F_2image,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Salad"
