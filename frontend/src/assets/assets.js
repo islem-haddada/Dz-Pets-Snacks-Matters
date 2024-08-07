@@ -15,6 +15,15 @@ import menu_4 from './menu_4.png'
 import menu_5 from './menu_5.png'
 import menu_6 from './menu_6.png'
 
+import image_1 from './image_1.png'
+import image_2 from './image_2.png'
+import image_3 from './image_3.png'
+import image_4 from './image_4.png'
+import image_5 from './image_5.png'
+import image_6 from './image_6.png'
+import image_7 from './image_7.png'
+import image_8 from './image_8.png'
+
 import D_image1 from './D_image1.png'
 import D_image2 from './D_image2.png'
 import D_image3 from './D_image3.png'
@@ -116,44 +125,14 @@ export const assets = {
     video_4,
     video_5,
     video_6,
-    D_image1,
-    D_image2,
-    D_image3,
-    D_image4,
-    D_image5,
-    D_image6,
-    D_image7,
-    D_image8,
-    F_image1,
-    F_image2,
-    F_image3,
-    F_image4,
-    F_image5,
-    F_image6,
-    F_image7,
-    D1_image,
-    D2_image,
-    D3_image,
-    D4_image,
-    D5_image,
-    D6_image,
-    D7_image,
-    D8_image,
-    F1_image,
-    F2_image,
-    F3_image,
-    F4_image,
-    F5_image,
-    F6_image,
-    F7_image,
-    D_1image,
-    D_2image,
-    D_3image,
-    D_4image,
-    F_1image,
-    F_2image,
-    F_3image,
-    F_4image
+    image_1,
+    image_2,
+    image_3,
+    image_4,
+    image_5,
+    image_6,
+    image_7,
+    image_8
 }
 
 export const menu_list = [
@@ -186,7 +165,7 @@ export const food_list = [
     {
         _id: "1",
         name: "Greek salad",
-        image: F_2image,
+        image: D_image1,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Salad"
@@ -194,77 +173,77 @@ export const food_list = [
     {
         _id: "2",
         name: "Veg salad",
-        image: food_2,
+        image: D_image2,
         price: 18,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Salad"
     }, {
         _id: "3",
         name: "Clover Salad",
-        image: food_3,
+        image: D_image3,
         price: 16,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Salad"
     }, {
         _id: "4",
         name: "Chicken Salad",
-        image: food_4,
+        image: D_image4,
         price: 24,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Salad"
     }, {
         _id: "5",
         name: "Lasagna Rolls",
-        image: food_5,
+        image: D_image5,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Rolls"
     }, {
         _id: "6",
         name: "Peri Peri Rolls",
-        image: food_6,
+        image: D_image6,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Rolls"
     }, {
         _id: "7",
         name: "Chicken Rolls",
-        image: food_7,
+        image: D_image7,
         price: 20,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Rolls"
     }, {
         _id: "8",
         name: "Veg Rolls",
-        image: food_8,
+        image: D_image8,
         price: 15,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Rolls"
     }, {
         _id: "9",
         name: "Ripple Ice Cream",
-        image: food_9,
+        image: F_image1,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Deserts"
     }, {
         _id: "10",
         name: "Fruit Ice Cream",
-        image: food_10,
+        image: F_image2,
         price: 22,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Deserts"
     }, {
         _id: "11",
         name: "Jar Ice Cream",
-        image: food_11,
+        image: F_image3,
         price: 10,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Deserts"
     }, {
         _id: "12",
         name: "Vanilla Ice Cream",
-        image: food_12,
+        image: F_image4,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Deserts"
@@ -272,7 +251,7 @@ export const food_list = [
     {
         _id: "13",
         name: "Chicken Sandwich",
-        image: food_13,
+        image: F_image5,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Sandwich"
@@ -280,56 +259,175 @@ export const food_list = [
     {
         _id: "14",
         name: "Vegan Sandwich",
-        image: food_14,
+        image: F_image6,
         price: 18,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Sandwich"
     }, {
         _id: "15",
         name: "Grilled Sandwich",
-        image: food_15,
+        image: F_image7,
         price: 16,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Sandwich"
     }, {
         _id: "16",
         name: "Bread Sandwich",
-        image: food_16,
+        image: D1_image, 
         price: 24,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Sandwich"
     }, {
         _id: "17",
         name: "Cup Cake",
-        image: food_17,
+        image: D2_image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Cake"
     }, {
         _id: "18",
         name: "Vegan Cake",
-        image: food_18,
+        image: D3_image,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Cake"
     }, {
         _id: "19",
         name: "Butterscotch Cake",
-        image: food_19,
+        image: D4_image,
         price: 20,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Cake"
     }, {
         _id: "20",
         name: "Sliced Cake",
-        image: food_20,
+        image: D5_image,
         price: 15,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Cake"
     }, {
         _id: "21",
         name: "Garlic Mushroom ",
-        image: food_21,
+        image: D6_image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Pure Veg"
+    }, {
+        _id: "21",
+        name: "Garlic Mushroom ",
+        image: D7_image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Pure Veg"
+    }, {
+        _id: "21",
+        name: "Garlic Mushroom ",
+        image: D8_image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Pure Veg"
+    }, {
+        _id: "21",
+        name: "Garlic Mushroom ",
+        image: F1_image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Pure Veg"
+    }, {
+        _id: "21",
+        name: "Garlic Mushroom ",
+        image: F2_image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Pure Veg"
+    }, {
+        _id: "21",
+        name: "Garlic Mushroom ",
+        image: F3_image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Pure Veg"
+    }, {
+        _id: "21",
+        name: "Garlic Mushroom ",
+        image: F4_image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Pure Veg"
+    }, {
+        _id: "21",
+        name: "Garlic Mushroom ",
+        image: F5_image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Pure Veg"
+    }, {
+        _id: "21",
+        name: "Garlic Mushroom ",
+        image: F6_image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Pure Veg"
+    }, {
+        _id: "21",
+        name: "Garlic Mushroom ",
+        image: F7_image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Pure Veg"
+    }, {
+        _id: "21",
+        name: "Garlic Mushroom ",
+        image: D_1image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Pure Veg"
+    }, {
+        _id: "21",
+        name: "Garlic Mushroom ",
+        image: D_2image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Pure Veg"
+    }, {
+        _id: "21",
+        name: "Garlic Mushroom ",
+        image: D_3image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Pure Veg"
+    }, {
+        _id: "21",
+        name: "Garlic Mushroom ",
+        image: D_4image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Pure Veg"
+    }, {
+        _id: "21",
+        name: "Garlic Mushroom ",
+        image: F_1image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Pure Veg"
+    }, {
+        _id: "21",
+        name: "Garlic Mushroom ",
+        image: F_2image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Pure Veg"
+    }, {
+        _id: "21",
+        name: "Garlic Mushroom ",
+        image: F_3image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Pure Veg"
+    }, {
+        _id: "21",
+        name: "Garlic Mushroom ",
+        image: F_4image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pure Veg"
