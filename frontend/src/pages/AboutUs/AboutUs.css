@@ -125,7 +125,6 @@
   overflow-x: auto;
   gap: 20px;
   padding: 10px 0;
-  overflow-x: hidden;
   scroll-behavior: smooth;
   scrollbar-width: thin; /* For Firefox */
   scrollbar-color: #2c3e50 #f9f9f9; /* Customize scrollbar color for Firefox */
@@ -146,7 +145,7 @@
 }
 
 .about-us-image img {
-  height: 380px; /* Set a fixed height for consistency */
+  height: 370px; /* Set a fixed height for consistency */
   object-fit: cover; /* Ensure the image covers the area without distortion */
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for better depth */

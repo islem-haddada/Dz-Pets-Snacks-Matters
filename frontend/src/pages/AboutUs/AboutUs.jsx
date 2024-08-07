@@ -49,9 +49,10 @@ const AboutUs = () => {
         At Dz Pets Snacks Matters, we are proud to have a team of dedicated professionals who are deeply passionate about pet well-being. Our diverse team includes veterinarians, nutritionists, and industry experts, all working collaboratively to ensure the highest standards in pet nutrition and care. Each member brings a wealth of expertise and a shared commitment to innovation, continuously striving to enhance and refine our product offerings. Our goal is to provide pets with the best quality snacks while supporting their overall health and happiness.
         </p>
         <div className="about-us-image">
-          <img src={assets.machine} alt="Our Team Image" />
-          <img src={assets.machine} alt="Our Team Image" />
-          <img src={assets.machine} alt="Our Team Image" />
+          <img src={assets.team_1} alt="Our Team Image" />
+          <img src={assets.team_2} alt="Our Team Image" />
+          <img src={assets.team_3} alt="Our Team Image" />
+          <img src={assets.team_4} alt="Our Team Image" />
         </div>
       </div>
 
@@ -61,9 +62,10 @@ const AboutUs = () => {
         At Dz Pets Snacks Matters, we pride ourselves on offering an extensive selection of pet snacks designed to meet diverse dietary needs and preferences. Each of our products is meticulously crafted using high-quality, natural ingredients to ensure optimal nutrition and irresistible taste. Our commitment to excellence means that every snack not only satisfies your pet's cravings but also supports their health and well-being. Explore our range to find the perfect treat that combines both flavor and nutrition for your beloved pet.
         </p>
         <div className="about-us-image">
-          <img src={assets.machine} alt="Our Products Image" />
-          <img src={assets.machine} alt="Our Products Image" />
-          <img src={assets.machine} alt="Our Products Image" />
+          <img src={assets.produit_1} alt="Our Products Image" />
+          <img src={assets.produit_2} alt="Our Products Image" />
+          <img src={assets.produit_3} alt="Our Products Image" />
+          <img src={assets.produit_4} alt="Our Products Image" />
         </div>
       </div>
     </div>
