@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import './FoodItem.css';
 import { assets } from '../../assets/assets';
 import { StoreContext } from '../../Context/StoreContext';
@@ -6,31 +6,45 @@ import { StoreContext } from '../../Context/StoreContext';
 const FoodItem = ({ image, name, price, desc, id }) => {
     const { cartItems, addToCart, removeFromCart, url, currency } = useContext(StoreContext);
     const imageRef = useRef(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleMouseMove = (e) => {
-        const rect = imageRef.current.getBoundingClientRect();
-        const x = (e.clientX - rect.left) / rect.width;
-        const y = (e.clientY - rect.top) / rect.height;
+        if (!isModalOpen) {
+            const rect = imageRef.current.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width;
+            const y = (e.clientY - rect.top) / rect.height;
 
-        imageRef.current.style.transformOrigin = `${x * 100}% ${y * 100}%`;
-        imageRef.current.style.transform = 'scale(4.8)'; // Augmentez la valeur du scale
+            imageRef.current.style.transformOrigin = `${x * 100}% ${y * 100}%`;
+            imageRef.current.style.transform = 'scale(4.8)';
+        }
     };
 
     const handleMouseLeave = () => {
-        imageRef.current.style.transformOrigin = 'center center';
-        imageRef.current.style.transform = 'scale(1)';
+        if (!isModalOpen) {
+            imageRef.current.style.transformOrigin = 'center center';
+            imageRef.current.style.transform = 'scale(1)';
+        }
+    };
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
     };
 
     return (
-        <div className='food-item'>
+        <div className={`food-item ${isModalOpen ? 'no-hover' : ''}`}>
             <div
                 className='food-item-img-container'
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
+                onClick={openModal}
             >
                 <img
                     ref={imageRef}
-                    className='food-item-image'
+                    className={`food-item-image ${isModalOpen ? 'no-transform' : ''}`}
                     src={`${url}/images/${image}`}
                     alt=""
                 />
@@ -64,6 +78,12 @@ const FoodItem = ({ image, name, price, desc, id }) => {
                 <p className="food-item-desc">{desc}</p>
                 <p className="food-item-price">{currency}{price}</p>
             </div>
+            {isModalOpen && (
+                <div className="modal" onClick={closeModal}>
+                    <span className="modal-close" onClick={closeModal}>&times;</span>
+                    <img className="modal-content" src={`${url}/images/${image}`} alt="" />
+                </div>
+            )}
         </div>
     );
 };
