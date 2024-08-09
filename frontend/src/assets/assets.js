@@ -188,268 +188,268 @@ export const food_list = [
         image: D_image1,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Salad"
+        category: "Dehydrated Turkey"
     },
     {
         _id: "2",
-        name: "Veg salad",
+        name: "Necks",
         image: D_image2,
         price: 18,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Salad"
+        category: "Dehydrated Turkey"
     }, {
         _id: "3",
-        name: "Clover Salad",
+        name: "Jerkys",
         image: D_image3,
         price: 16,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Salad"
+        category: "Dehydrated Turkey"
     }, {
         _id: "4",
-        name: "Chicken Salad",
+        name: "Heads",
         image: D_image4,
         price: 24,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Salad"
+        category: "Dehydrated Turkey"
     }, {
         _id: "5",
-        name: "Lasagna Rolls",
+        name: "Feets",
         image: D_image5,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
+        category: "Dehydrated Chicken"
     }, {
         _id: "6",
-        name: "Peri Peri Rolls",
+        name: "Gezzard",
         image: D_image6,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
+        category: "Dehydrated Chicken"
     }, {
         _id: "7",
-        name: "Chicken Rolls",
+        name: "Necks",
         image: D_image7,
         price: 20,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
+        category: "Dehydrated Chicken"
     }, {
         _id: "8",
-        name: "Veg Rolls",
+        name: "Bites",
         image: D_image8,
         price: 15,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
+        category: "Dehydrated Chicken"
     }, {
         _id: "9",
-        name: "Ripple Ice Cream",
+        name: "Heads",
         image: F_image1,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
+        category: "Dehydrated Quail"
     }, {
         _id: "10",
-        name: "Fruit Ice Cream",
+        name: "Livres",
         image: F_image2,
         price: 22,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
+        category: "Dehydrated Quail"
     }, {
         _id: "11",
-        name: "Jar Ice Cream",
+        name: "Necks",
         image: F_image3,
         price: 10,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
+        category: "Dehydrated Quail"
     }, {
         _id: "12",
-        name: "Vanilla Ice Cream",
+        name: "Liveres",
         image: F_image4,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
+        category: "Dehydrated Quail"
     },
     {
         _id: "13",
-        name: "Chicken Sandwich",
+        name: "Heeds",
         image: F_image5,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
+        category: "Freeze-dried Turkey"
     },
     {
         _id: "14",
-        name: "Vegan Sandwich",
+        name: "Feets",
         image: F_image6,
         price: 18,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
+        category: "Freeze-dried Turkey"
     }, {
         _id: "15",
-        name: "Grilled Sandwich",
+        name: "Gizzard",
         image: F_image7,
         price: 16,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
+        category: "Freeze-dried Turkey"
     }, {
         _id: "16",
-        name: "Bread Sandwich",
+        name: "Gizzard",
         image: D1_image, 
         price: 24,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
+        category: "Freeze-dried Turkey"
     }, {
         _id: "17",
-        name: "Cup Cake",
+        name: "Bites",
         image: D2_image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
+        category: "Freeze-dried Chicken"
     }, {
         _id: "18",
-        name: "Vegan Cake",
+        name: "Jerkys",
         image: D3_image,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
+        category: "Freeze-dried Chicken"
     }, {
         _id: "19",
-        name: "Butterscotch Cake",
+        name: "Feets",
         image: D4_image,
         price: 20,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
+        category: "Freeze-dried Chicken"
     }, {
         _id: "20",
-        name: "Sliced Cake",
+        name: "Necks",
         image: D5_image,
         price: 15,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
+        category: "Freeze-dried Chicken"
     }, {
         _id: "21",
-        name: "Garlic Mushroom ",
+        name: "Heads ",
         image: D6_image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        category: "Freeze-dried Quail"
     }, {
         _id: "21",
-        name: "Garlic Mushroom ",
+        name: "Heads ",
         image: D7_image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        category: "Freeze-dried Quail"
     }, {
         _id: "21",
-        name: "Garlic Mushroom ",
+        name: "Heads ",
         image: D8_image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        category: "Freeze-dried Quail"
     }, {
         _id: "21",
-        name: "Garlic Mushroom ",
+        name: "Heads ",
         image: F1_image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        category: "Freeze-dried Quail"
     }, {
         _id: "21",
-        name: "Garlic Mushroom ",
+        name: "Heads ",
         image: F2_image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        category: "Freeze-dried Quail"
     }, {
         _id: "21",
-        name: "Garlic Mushroom ",
+        name: "Heads ",
         image: F3_image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        category: "Freeze-dried Quail"
     }, {
         _id: "21",
-        name: "Garlic Mushroom ",
+        name: "Heads ",
         image: F4_image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        category: "Freeze-dried Quail"
     }, {
         _id: "21",
-        name: "Garlic Mushroom ",
+        name: "Heads ",
         image: F5_image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        category: "Freeze-dried Quail"
     }, {
         _id: "21",
-        name: "Garlic Mushroom ",
+        name: "Heads ",
         image: F6_image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        category: "Freeze-dried Quail"
     }, {
         _id: "21",
-        name: "Garlic Mushroom ",
+        name: "Heads ",
         image: F7_image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        category: "Freeze-dried Quail"
     }, {
         _id: "21",
-        name: "Garlic Mushroom ",
+        name: "Heads ",
         image: D_1image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        category: "Freeze-dried Quail"
     }, {
         _id: "21",
-        name: "Garlic Mushroom ",
+        name: "Heads ",
         image: D_2image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        category: "Freeze-dried Quail"
     }, {
         _id: "21",
-        name: "Garlic Mushroom ",
+        name: "Heads ",
         image: D_3image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        category: "Freeze-dried Quail"
     }, {
         _id: "21",
-        name: "Garlic Mushroom ",
+        name: "Heads ",
         image: D_4image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        category: "Freeze-dried Quail"
     }, {
         _id: "21",
-        name: "Garlic Mushroom ",
+        name: "Heads ",
         image: F_1image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        category: "Freeze-dried Quail"
     }, {
         _id: "21",
-        name: "Garlic Mushroom ",
+        name: "Heads ",
         image: F_2image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        category: "Freeze-dried Quail"
     }, {
         _id: "21",
-        name: "Garlic Mushroom ",
+        name: "Heads ",
         image: F_3image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        category: "Freeze-dried Quail"
     }, {
         _id: "21",
-        name: "Garlic Mushroom ",
+        name: "Heads ",
         image: F_4image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        category: "Freeze-dried Quail"
     }
 ]
