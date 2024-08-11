@@ -12,6 +12,7 @@ import team_1 from './team_1.png'
 import team_2 from './team_2.png'
 import team_3 from './team_3.png'
 import team_4 from './team_4.png'
+import team_5 from './team_5.png'
 
 import produit_1 from './produit_1.png'
 import produit_2 from './produit_2.png'
@@ -134,6 +135,7 @@ export const assets = {
     team_2,
     team_3,
     team_4,
+    team_5,
     produit_1,
     produit_2,
     produit_3,
