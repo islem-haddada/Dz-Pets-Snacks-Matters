@@ -53,6 +53,7 @@ const AboutUs = () => {
           <img src={assets.team_2} alt="Our Team Image" />
           <img src={assets.team_3} alt="Our Team Image" />
           <img src={assets.team_4} alt="Our Team Image" />
+          <img src={assets.team_5} alt="Our Team Image" />
         </div>
       </div>
 
