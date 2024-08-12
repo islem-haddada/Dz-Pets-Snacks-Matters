@@ -15,7 +15,7 @@ const Footer = () => {
           <p>
             Welcome to DzPetsSnacksMatters, where your pets' health and happiness are our top priority.
             We offer a variety of healthy snacks tailored for your pets' needs. Join us on our mission to 
-            bring joy to your pets' lives,one snack at a time.
+            bring joy to your pets' lives, one snack at a time.
           </p>
           <div className="footer-social-icons">
             <a href="https://www.facebook.com/profile.php?id=61563412271128" target="_blank" rel="noopener noreferrer">
