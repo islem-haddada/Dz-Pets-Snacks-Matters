@@ -8,7 +8,6 @@ import machine from './machine.png'
 import machine_1 from './machine_1.png'
 import machine_2 from './machine_2.png'
 
-
 import team_1 from './team_1.png'
 import team_2 from './team_2.png'
 import team_3 from './team_3.png'
