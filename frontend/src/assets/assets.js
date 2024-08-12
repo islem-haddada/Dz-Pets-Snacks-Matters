@@ -4,6 +4,7 @@ import header_img from './header_img.png'
 import header_video from './header_video.mp4'
 import video_about from './video_about.mp4'
 
+
 import machine from './machine.png'
 import machine_1 from './machine_1.png'
 import machine_2 from './machine_2.png'
