@@ -175,11 +175,11 @@ export const menu_list = [
         menu_image: menu_4
     },
     {
-        menu_name: "Freeze-dried Qauil",
+        menu_name: "Freeze-dried Quail",
         menu_image: menu_5
     },
     {
-        menu_name: "Dehydrated Qauil",
+        menu_name: "Dehydrated Quail",
         menu_image: menu_6
     }]
 
