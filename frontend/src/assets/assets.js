@@ -157,32 +157,6 @@ export const assets = {
     image_8
 }
 
-export const menu_list = [
-    {
-        menu_name: "Freeze-dried Turkey",
-        menu_image: menu_1
-    },
-    {
-        menu_name: "Dehydrated Turkey",
-        menu_image: menu_2
-    },
-    {
-        menu_name: "Freeze-dried Chicken",
-        menu_image: menu_3
-    },
-    {
-        menu_name: "Dehydrated Chicken",
-        menu_image: menu_4
-    },
-    {
-        menu_name: "Freeze-dried Quail",
-        menu_image: menu_5
-    },
-    {
-        menu_name: "Dehydrated Quail",
-        menu_image: menu_6
-    }]
-
 export const food_list = [
     {
         _id: "1",
