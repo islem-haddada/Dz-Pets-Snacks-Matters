@@ -1,16 +1,18 @@
-import React, { useState } from 'react';
-import './Add.css';
+import React, { useState } from 'react'
+import './Add.css'
 import { assets, url } from '../../assets/assets';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
 const Add = () => {
-    const [image, setImage] = useState(null);
+
+
+    const [image, setImage] = useState(false);
     const [data, setData] = useState({
         name: "",
         description: "",
         price: "",
-        category: "Dehydrated Turkey"
+        category: ""
     });
 
     const onSubmitHandler = async (event) => {
@@ -18,12 +20,7 @@ const Add = () => {
 
         if (!image) {
             toast.error('Image not selected');
-            return;
-        }
-
-        if (isNaN(data.price) || Number(data.price) <= 0) {
-            toast.error('Invalid price');
-            return;
+            return null;
         }
 
         const formData = new FormData();
@@ -32,30 +29,27 @@ const Add = () => {
         formData.append("price", Number(data.price));
         formData.append("category", data.category);
         formData.append("image", image);
-
-        try {
-            const response = await axios.post(`${url}/api/food/add`, formData);
-            if (response.data.success) {
-                toast.success(response.data.message);
-                setData({
-                    name: "",
-                    description: "",
-                    price: "",
-                    category: data.category
-                });
-                setImage(null);
-            } else {
-                toast.error(response.data.message);
-            }
-        } catch (error) {
-            toast.error('An error occurred. Please try again.');
+        const response = await axios.post(`${url}/api/food/add`, formData);
+        if (response.data.success) {
+            toast.success(response.data.message)
+            setData({
+                name: "",
+                description: "",
+                price: "",
+                category: data.category
+            })
+            setImage(false);
         }
-    };
+        else {
+            toast.error(response.data.message)
+        }
+    }
 
     const onChangeHandler = (event) => {
-        const { name, value } = event.target;
-        setData(prevData => ({ ...prevData, [name]: value }));
-    };
+        const name = event.target.name;
+        const value = event.target.value;
+        setData(data => ({ ...data, [name]: value }))
+    }
 
     return (
         <div className='add'>
@@ -78,8 +72,8 @@ const Add = () => {
                 <div className='add-category-price'>
                     <div className='add-category flex-col'>
                         <p>Product category</p>
-                        <select name='category' onChange={onChangeHandler} value={data.category}>
-                            <option value="Freeze-dried Turkey">Freeze-dried Turkey</option>
+                        <select name='category' onChange={onChangeHandler} >
+                        <option value="Freeze-dried Turkey">Freeze-dried Turkey</option>
                             <option value="Dehydrated Turkey">Dehydrated Turkey</option>
                             <option value="Freeze-dried Chicken">Freeze-dried Chicken</option>
                             <option value="Dehydrated Chicken">Dehydrated Chicken</option>
@@ -89,13 +83,13 @@ const Add = () => {
                     </div>
                     <div className='add-price flex-col'>
                         <p>Product Price</p>
-                        <input type="number" name='price' onChange={onChangeHandler} value={data.price} placeholder='25' required />
+                        <input type="Number" name='price' onChange={onChangeHandler} value={data.price} placeholder='25' />
                     </div>
                 </div>
-                <button type='submit' className='add-btn'>ADD</button>
+                <button type='submit' className='add-btn' >ADD</button>
             </form>
         </div>
-    );
-};
+    )
+}
 
-export default Add;
+export default Add
