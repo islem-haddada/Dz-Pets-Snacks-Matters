@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className='welcome-message'>
         <h1>Hello, sir</h1>
       </div>
-      <img className='profile' src={assets.profile_image} alt="Profile" />
+      <img className='profile' src={assets.logo} alt="Profile" />
     </div>
   );
 };
