@@ -1,7 +1,7 @@
 import React, { useContext, useRef, useState } from 'react';
 import './FoodItem.css';
 import { assets } from '../../assets/assets';
-import { StoreContext } from '../../Context/StoreContext';
+import { StoreContext } from '../../context/StoreContext';
 
 const FoodItem = ({ image, name, price, desc, id }) => {
     const { cartItems, addToCart, removeFromCart, url, currency } = useContext(StoreContext);
@@ -34,9 +34,6 @@ const FoodItem = ({ image, name, price, desc, id }) => {
         setIsModalOpen(false);
     };
 
-    // Fallback if cartItems is undefined or item not found
-    const itemCount = cartItems?.[id] || 0;
-
     return (
         <div className={`food-item ${isModalOpen ? 'no-hover' : ''}`}>
             <div
@@ -51,10 +48,13 @@ const FoodItem = ({ image, name, price, desc, id }) => {
                     src={`${url}/images/${image}`}
                     alt=""
                 />
-                {itemCount === 0 ? (
+                {!cartItems[id] ? (
                     <img
                         className='add'
-                        onClick={() => addToCart(id)}
+                        onClick={(e) => {
+                            e.stopPropagation(); // Prevents modal from opening
+                            addToCart(id);
+                        }}
                         src={assets.add_icon_white}
                         alt=""
                     />
@@ -62,13 +62,19 @@ const FoodItem = ({ image, name, price, desc, id }) => {
                     <div className="food-item-counter">
                         <img
                             src={assets.remove_icon_red}
-                            onClick={() => removeFromCart(id)}
+                            onClick={(e) => {
+                                e.stopPropagation(); // Prevents modal from opening
+                                removeFromCart(id);
+                            }}
                             alt=""
                         />
-                        <p>{itemCount}</p>
+                        <p>{cartItems[id]}</p>
                         <img
                             src={assets.add_icon_green}
-                            onClick={() => addToCart(id)}
+                            onClick={(e) => {
+                                e.stopPropagation(); // Prevents modal from opening
+                                addToCart(id);
+                            }}
                             alt=""
                         />
                     </div>
