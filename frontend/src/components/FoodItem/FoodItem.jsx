@@ -54,7 +54,10 @@ const FoodItem = ({ image, name, price, desc, id }) => {
                 {itemCount === 0 ? (
                     <img
                         className='add'
-                        onClick={() => addToCart(id)}
+                        onClick={(e) => {
+                            e.stopPropagation(); // Prevents modal from opening
+                            addToCart(id);
+                        }}
                         src={assets.add_icon_white}
                         alt=""
                     />
@@ -62,13 +65,19 @@ const FoodItem = ({ image, name, price, desc, id }) => {
                     <div className="food-item-counter">
                         <img
                             src={assets.remove_icon_red}
-                            onClick={() => removeFromCart(id)}
+                            onClick={(e) => {
+                                e.stopPropagation(); // Prevents modal from opening
+                                removeFromCart(id);
+                            }}
                             alt=""
                         />
                         <p>{itemCount}</p>
                         <img
                             src={assets.add_icon_green}
-                            onClick={() => addToCart(id)}
+                            onClick={(e) => {
+                                e.stopPropagation(); // Prevents modal from opening
+                                addToCart(id);
+                            }}
                             alt=""
                         />
                     </div>
