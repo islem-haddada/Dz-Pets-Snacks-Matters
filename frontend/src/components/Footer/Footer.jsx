@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-content-left">
           <p>
-            Welcome to Dz Pets Snacks Matters, where your pets' health and happiness are our top priority.
+            Welcome to DzPetsSnacksMatters, where your pets' health and happiness are our top priority.
             We offer a variety of healthy snacks tailored for your pets' needs. Join us on our mission to 
             bring joy to your pets' lives, one snack at a time.
           </p>
