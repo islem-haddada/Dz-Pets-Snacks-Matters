@@ -79,6 +79,18 @@ import F_2image from './F_2image.png'
 import F_3image from './F_3image.png'
 import F_4image from './F_4image.png'
 
+import F1image from './F1image.png'
+import F2image from './F2image.png'
+import F3image from './F3image.png'
+import F4image from './F4image.png'
+import F5image from './F5image.png'
+
+import D1image from './D1image.png'
+import D2image from './D2image.png'
+import D3image from './D3image.png'
+import D4image from './D4image.png'
+import D5image from './D5image.png'
+
 import video_1 from './video_1.mp4'
 import video_2 from './video_2.mp4'
 import video_3 from './video_3.mp4'
@@ -180,6 +192,12 @@ export const menu_list = [
     },
     {
         menu_name: "Dehydrated Quail",
+        menu_image: menu_6
+    },{
+        menu_name: "Freeze-dried Pumpkin",
+        menu_image: menu_6
+    },{
+        menu_name: "Dehydrated Pumpkin",
         menu_image: menu_6
     }]
 
@@ -335,121 +353,191 @@ export const food_list = [
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Freeze-dried Quail"
     }, {
-        _id: "21",
+        _id: "22",
         name: "Heads ",
         image: D7_image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Freeze-dried Quail"
     }, {
-        _id: "21",
+        _id: "23",
         name: "Heads ",
         image: D8_image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Freeze-dried Quail"
     }, {
-        _id: "21",
+        _id: "24",
         name: "Heads ",
         image: F1_image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Freeze-dried Quail"
     }, {
-        _id: "21",
+        _id: "25",
         name: "Heads ",
         image: F2_image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Freeze-dried Quail"
     }, {
-        _id: "21",
+        _id: "26",
         name: "Heads ",
         image: F3_image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Freeze-dried Quail"
     }, {
-        _id: "21",
+        _id: "28",
         name: "Heads ",
         image: F4_image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Freeze-dried Quail"
     }, {
-        _id: "21",
+        _id: "29",
         name: "Heads ",
         image: F5_image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Freeze-dried Quail"
     }, {
-        _id: "21",
+        _id: "30",
         name: "Heads ",
         image: F6_image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Freeze-dried Quail"
     }, {
-        _id: "21",
+        _id: "31",
         name: "Heads ",
         image: F7_image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Freeze-dried Quail"
     }, {
-        _id: "21",
+        _id: "32",
         name: "Heads ",
         image: D_1image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Freeze-dried Quail"
     }, {
-        _id: "21",
+        _id: "33",
         name: "Heads ",
         image: D_2image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Freeze-dried Quail"
     }, {
-        _id: "21",
+        _id: "34",
         name: "Heads ",
         image: D_3image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Freeze-dried Quail"
     }, {
-        _id: "21",
+        _id: "35",
         name: "Heads ",
         image: D_4image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Freeze-dried Quail"
     }, {
-        _id: "21",
+        _id: "36",
         name: "Heads ",
         image: F_1image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Freeze-dried Quail"
     }, {
-        _id: "21",
+        _id: "37",
         name: "Heads ",
         image: F_2image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Freeze-dried Quail"
     }, {
-        _id: "21",
+        _id: "38",
         name: "Heads ",
         image: F_3image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Freeze-dried Quail"
     }, {
-        _id: "21",
+        _id: "39",
         name: "Heads ",
         image: F_4image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Freeze-dried Quail"
+    }, {
+        _id: "40",
+        name: "Heads ",
+        image: F1image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Freeze-dried Quail"
+    }, {
+        _id: "41",
+        name: "Heads ",
+        image: F2image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Freeze-dried Quail"
+    }, {
+        _id: "42",
+        name: "Heads ",
+        image: F3image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Freeze-dried Quail"
+    }, {
+        _id: "43",
+        name: "Heads ",
+        image: F4image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Freeze-dried Quail"
+    }, {
+        _id: "44",
+        name: "Heads ",
+        image: F5image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Freeze-dried Quail"
+    }, {
+        _id: "45",
+        name: "Heads ",
+        image: D1image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Freeze-dried Quail"
+    }, {
+        _id: "46",
+        name: "Heads ",
+        image: D2image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Freeze-dried Quail"
+    }, {
+        _id: "47",
+        name: "Heads ",
+        image: D3image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Freeze-dried Quail"
+    }, {
+        _id: "48",
+        name: "Heads ",
+        image: D4image,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Freeze-dried Quail"
+    }, {
+        _id: "49",
+        name: "Heads ",
+        image: D5image,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Freeze-dried Quail"
