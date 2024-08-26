@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import './ExploreMenu.css'
-import { StoreContext } from '../../context/StoreContext'
+import { StoreContext } from '../../context/StoreContext';
 
 const ExploreMenu = ({category,setCategory}) => {
 
