@@ -34,20 +34,20 @@ const FoodItem = ({ image, name, price, desc, id }) => {
         setIsModalOpen(false);
     };
 
-    // Fallback if cartItems is undefined or item not found
-    const itemCount = cartItems?.[id] || 0;
-
     const handleAddToCart = (e) => {
-        e.stopPropagation(); // Prevents modal from opening
-        e.preventDefault(); // Prevents any default touch/click behavior
+        e.stopPropagation();  // Prevent modal from opening
+        e.preventDefault();   // Prevent any default touch/click behavior
         addToCart(id);
     };
 
     const handleRemoveFromCart = (e) => {
-        e.stopPropagation(); // Prevents modal from opening
-        e.preventDefault(); // Prevents any default touch/click behavior
+        e.stopPropagation();  // Prevent modal from opening
+        e.preventDefault();   // Prevent any default touch/click behavior
         removeFromCart(id);
     };
+
+    // Fallback if cartItems is undefined or item not found
+    const itemCount = cartItems?.[id] || 0;
 
     return (
         <div className={`food-item ${isModalOpen ? 'no-hover' : ''}`}>
@@ -55,7 +55,7 @@ const FoodItem = ({ image, name, price, desc, id }) => {
                 className='food-item-img-container'
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
-                onClick={openModal}
+                onClick={openModal}  // This will only trigger if the add/remove buttons are not clicked
             >
                 <img
                     ref={imageRef}
@@ -66,7 +66,7 @@ const FoodItem = ({ image, name, price, desc, id }) => {
                 {itemCount === 0 ? (
                     <img
                         className='add'
-                        onClick={handleAddToCart}
+                        onClick={handleAddToCart}  // Properly handle the add-to-cart action
                         src={assets.add_icon_white}
                         alt=""
                     />
@@ -74,13 +74,13 @@ const FoodItem = ({ image, name, price, desc, id }) => {
                     <div className="food-item-counter">
                         <img
                             src={assets.remove_icon_red}
-                            onClick={handleRemoveFromCart}
+                            onClick={handleRemoveFromCart}  // Properly handle the remove-from-cart action
                             alt=""
                         />
                         <p>{itemCount}</p>
                         <img
                             src={assets.add_icon_green}
-                            onClick={handleAddToCart}
+                            onClick={handleAddToCart}  // Properly handle the add-to-cart action
                             alt=""
                         />
                     </div>
