@@ -193,12 +193,14 @@ export const menu_list = [
     {
         menu_name: "Dehydrated Quail",
         menu_image: menu_6
-    },{
+    },
+    {
         menu_name: "Freeze-dried Pumpkin",
-        menu_image: menu_6
-    },{
+        menu_image: menu_7
+    },
+    {
         menu_name: "Dehydrated Pumpkin",
-        menu_image: menu_6
+        menu_image: menu_8
     }]
 
 export const food_list = [
